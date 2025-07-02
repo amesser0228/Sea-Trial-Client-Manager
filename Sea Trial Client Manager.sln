@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sea Trial Client Manager", "Sea Trial Client Manager.csproj", "{51D77FA2-FC51-478A-A65E-121A34D5047C}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "STCM Setup Manager", "..\STCM Setup Manager\STCM Setup Manager.vdproj", "{03FF0344-8666-4BE4-9DA8-99C538DA61EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51D77FA2-FC51-478A-A65E-121A34D5047C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51D77FA2-FC51-478A-A65E-121A34D5047C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51D77FA2-FC51-478A-A65E-121A34D5047C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51D77FA2-FC51-478A-A65E-121A34D5047C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03FF0344-8666-4BE4-9DA8-99C538DA61EF}.Debug|Any CPU.ActiveCfg = Debug
+		{03FF0344-8666-4BE4-9DA8-99C538DA61EF}.Debug|Any CPU.Build.0 = Debug
+		{03FF0344-8666-4BE4-9DA8-99C538DA61EF}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F91BBAB-281D-4830-B7DB-984D465E8D30}
+	EndGlobalSection
+EndGlobal

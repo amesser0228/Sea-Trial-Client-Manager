@@ -1,0 +1,481 @@
+F:\Visual Studio Projects\Sea Trials Script Launcher\bin\Debug\PowerShellCommands.docx
+F:\Visual Studio Projects\Sea Trials Script Launcher\bin\Debug\VS Scripts\checkBox_PowerDownScripts.ps1
+F:\Visual Studio Projects\Sea Trials Script Launcher\bin\Debug\VS Scripts\createClientSystemReport.ps1
+F:\Visual Studio Projects\Sea Trials Script Launcher\bin\Debug\VS Scripts\evaluateSTIGScript.ps1
+F:\Visual Studio Projects\Sea Trials Script Launcher\bin\Debug\VS Scripts\PMS501-CACI_CKL_COPIER_Evaluate-STIG.ps1
+F:\Visual Studio Projects\Sea Trials Script Launcher\bin\Debug\VS Scripts\PMS501-CACI_CKL_EDITOR.ps1
+F:\Visual Studio Projects\Sea Trials Script Launcher\bin\Debug\VS Scripts\PMS501_BaselineImage_Configuration.ps1
+F:\Visual Studio Projects\Sea Trials Script Launcher\bin\Debug\VS Scripts\PMS501_Disk_Encryption.ps1
+F:\Visual Studio Projects\Sea Trials Script Launcher\bin\Debug\VS Scripts\PMS501_TrialsImage_Configuration.ps1
+F:\Visual Studio Projects\Sea Trials Script Launcher\bin\Debug\VS Scripts\power_off_remote_host.ps1
+F:\Visual Studio Projects\Sea Trials Script Launcher\bin\Debug\VS Scripts\run_command_remote_host.ps1
+F:\Visual Studio Projects\Sea Trials Script Launcher\bin\Debug\VS Scripts\run_poweroff_hosts.ps1
+F:\Visual Studio Projects\Sea Trials Script Launcher\bin\Debug\VS Scripts\run_script_remote_host.ps1
+F:\Visual Studio Projects\Sea Trials Script Launcher\bin\Debug\VS Scripts\enable_Connection_To_Clients.ps1
+F:\Visual Studio Projects\Sea Trials Script Launcher\bin\Debug\VS Scripts\restart_all_clients.ps1
+F:\Visual Studio Projects\Sea Trials Script Launcher\bin\Debug\VS Scripts\set_Prod_Policies_On_Windows.ps1
+F:\Visual Studio Projects\Sea Trials Script Launcher\bin\Debug\VS Scripts\addNetworkPrinter.ps1
+F:\Visual Studio Projects\Sea Trials Script Launcher\bin\Debug\Sea Trials Script Launcher.exe.config
+F:\Visual Studio Projects\Sea Trials Script Launcher\bin\Debug\Sea Trials Script Launcher.exe.manifest
+F:\Visual Studio Projects\Sea Trials Script Launcher\bin\Debug\Sea Trials Script Launcher.application
+F:\Visual Studio Projects\Sea Trials Script Launcher\bin\Debug\Sea Trials Script Launcher.exe
+F:\Visual Studio Projects\Sea Trials Script Launcher\bin\Debug\Sea Trials Script Launcher.pdb
+F:\Visual Studio Projects\Sea Trials Script Launcher\obj\Debug\Sea Trial Client Manager.csproj.AssemblyReference.cache
+F:\Visual Studio Projects\Sea Trials Script Launcher\obj\Debug\Sea_Trials_Script_Launcher.Form1.resources
+F:\Visual Studio Projects\Sea Trials Script Launcher\obj\Debug\Sea_Trials_Script_Launcher.remoteCommandsForm.resources
+F:\Visual Studio Projects\Sea Trials Script Launcher\obj\Debug\Sea_Trials_Script_Launcher.Help_Form.resources
+F:\Visual Studio Projects\Sea Trials Script Launcher\obj\Debug\Sea_Trials_Script_Launcher.Script_Help_Form.resources
+F:\Visual Studio Projects\Sea Trials Script Launcher\obj\Debug\Sea_Trials_Script_Launcher.aboutForm.resources
+F:\Visual Studio Projects\Sea Trials Script Launcher\obj\Debug\Sea_Trials_Script_Launcher.Properties.Resources.resources
+F:\Visual Studio Projects\Sea Trials Script Launcher\obj\Debug\Sea Trial Client Manager.csproj.GenerateResource.cache
+F:\Visual Studio Projects\Sea Trials Script Launcher\obj\Debug\Sea Trial Client Manager.csproj.CoreCompileInputs.cache
+F:\Visual Studio Projects\Sea Trials Script Launcher\obj\Debug\Sea Trials Script Launcher.exe.manifest
+F:\Visual Studio Projects\Sea Trials Script Launcher\obj\Debug\Sea Trials Script Launcher.application
+F:\Visual Studio Projects\Sea Trials Script Launcher\obj\Debug\Sea Trials Script Launcher.exe
+F:\Visual Studio Projects\Sea Trials Script Launcher\obj\Debug\Sea Trials Script Launcher.pdb
+F:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\PowerShellCommands.docx
+F:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\checkBox_PowerDownScripts.ps1
+F:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\createClientSystemReport.ps1
+F:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\evaluateSTIGScript.ps1
+F:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501-CACI_CKL_COPIER_Evaluate-STIG.ps1
+F:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501-CACI_CKL_EDITOR.ps1
+F:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501_BaselineImage_Configuration.ps1
+F:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501_Disk_Encryption.ps1
+F:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501_TrialsImage_Configuration.ps1
+F:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\power_off_remote_host.ps1
+F:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\run_command_remote_host.ps1
+F:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\run_poweroff_hosts.ps1
+F:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\run_script_remote_host.ps1
+F:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\enable_Connection_To_Clients.ps1
+F:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\restart_all_clients.ps1
+F:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\set_Prod_Policies_On_Windows.ps1
+F:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\addNetworkPrinter.ps1
+F:\Visual Studio Projects\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.csproj.AssemblyReference.cache
+F:\Visual Studio Projects\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.Form1.resources
+F:\Visual Studio Projects\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.remoteCommandsForm.resources
+F:\Visual Studio Projects\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.Help_Form.resources
+F:\Visual Studio Projects\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.Script_Help_Form.resources
+F:\Visual Studio Projects\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.aboutForm.resources
+F:\Visual Studio Projects\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.Properties.Resources.resources
+F:\Visual Studio Projects\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.csproj.GenerateResource.cache
+F:\Visual Studio Projects\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.csproj.CoreCompileInputs.cache
+F:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager.exe.config
+F:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager.exe.manifest
+F:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager.application
+F:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager.exe
+F:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager.pdb
+F:\Visual Studio Projects\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.exe.manifest
+F:\Visual Studio Projects\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.application
+F:\Visual Studio Projects\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.exe
+F:\Visual Studio Projects\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.pdb
+H:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\PowerShellCommands.docx
+H:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\checkBox_PowerDownScripts.ps1
+H:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\createClientSystemReport.ps1
+H:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\evaluateSTIGScript.ps1
+H:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501-CACI_CKL_COPIER_Evaluate-STIG.ps1
+H:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501-CACI_CKL_EDITOR.ps1
+H:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501_BaselineImage_Configuration.ps1
+H:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501_Disk_Encryption.ps1
+H:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501_TrialsImage_Configuration.ps1
+H:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\power_off_remote_host.ps1
+H:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\run_command_remote_host.ps1
+H:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\run_poweroff_hosts.ps1
+H:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\run_script_remote_host.ps1
+H:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\enable_Connection_To_Clients.ps1
+H:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\restart_all_clients.ps1
+H:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\set_Prod_Policies_On_Windows.ps1
+H:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\VS Scripts\addNetworkPrinter.ps1
+H:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager.exe.config
+H:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager.exe.manifest
+H:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager.application
+H:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager.exe
+H:\Visual Studio Projects\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager.pdb
+H:\Visual Studio Projects\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.csproj.AssemblyReference.cache
+H:\Visual Studio Projects\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.Form1.resources
+H:\Visual Studio Projects\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.remoteCommandsForm.resources
+H:\Visual Studio Projects\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.Help_Form.resources
+H:\Visual Studio Projects\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.Script_Help_Form.resources
+H:\Visual Studio Projects\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.aboutForm.resources
+H:\Visual Studio Projects\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.Properties.Resources.resources
+H:\Visual Studio Projects\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.csproj.GenerateResource.cache
+H:\Visual Studio Projects\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.csproj.CoreCompileInputs.cache
+H:\Visual Studio Projects\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.exe.manifest
+H:\Visual Studio Projects\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.application
+H:\Visual Studio Projects\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.exe
+H:\Visual Studio Projects\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.pdb
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.csproj.AssemblyReference.cache
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.Form1.resources
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.remoteCommandsForm.resources
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.Help_Form.resources
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.Script_Help_Form.resources
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.aboutForm.resources
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.Properties.Resources.resources
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.csproj.GenerateResource.cache
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.csproj.CoreCompileInputs.cache
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.exe
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.pdb
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\PowerShellCommands.docx
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\checkBox_PowerDownScripts.ps1
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\createClientSystemReport.ps1
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\evaluateSTIGScript.ps1
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501-CACI_CKL_COPIER_Evaluate-STIG.ps1
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501-CACI_CKL_EDITOR.ps1
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501_BaselineImage_Configuration.ps1
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501_Disk_Encryption.ps1
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501_TrialsImage_Configuration.ps1
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\power_off_remote_host.ps1
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\run_command_remote_host.ps1
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\run_poweroff_hosts.ps1
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\run_script_remote_host.ps1
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\enable_Connection_To_Clients.ps1
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\restart_all_clients.ps1
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\set_Prod_Policies_On_Windows.ps1
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\addNetworkPrinter.ps1
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager.exe.config
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager.exe.manifest
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager.application
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager.exe
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager.pdb
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.exe.manifest
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.application
+F:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\e-s_Ckl_Edit.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\PowerShellCommands.docx
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\createClientSystemReport.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\evaluateSTIGScript.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501-CACI_CKL_COPIER_Evaluate-STIG.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501-CACI_CKL_EDITOR.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501_BaselineImage_Configuration.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501_Disk_Encryption.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501_TrialsImage_Configuration.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\enable_Connection_To_Clients.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\set_Prod_Policies_On_Windows.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\addNetworkPrinter.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\e-s_Ckl_Edit.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\setNISTPolicies.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager WKS.exe.config
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager WKS.exe.manifest
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager WKS.application
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager WKS.exe
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager WKS.pdb
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.csproj.AssemblyReference.cache
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.remoteCommandsForm.resources
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.Help_Form.resources
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.Script_Help_Form.resources
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.aboutForm.resources
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.Properties.Resources.resources
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.csproj.GenerateResource.cache
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.csproj.CoreCompileInputs.cache
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager WKS.exe.manifest
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager WKS.application
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager WKS.exe
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager WKS.pdb
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\checkClientStatus.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\save_VS_Script_ToLocalMachine.ps1
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\PowerShellCommands.docx
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\powerOffHosts.ps1
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\createClientSystemReport.ps1
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\evaluateSTIGScript.ps1
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501-CACI_CKL_COPIER_Evaluate-STIG.ps1
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501-CACI_CKL_EDITOR.ps1
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501_BaselineImage_Configuration.ps1
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501_Disk_Encryption.ps1
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501_TrialsImage_Configuration.ps1
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\readme.txt
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\run_command_remote_host.ps1
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\run_script_remote_host.ps1
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\enable_Connection_To_Clients.ps1
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\restart_all_clients.ps1
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\set_Prod_Policies_On_Windows.ps1
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\addNetworkPrinter.ps1
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\e-s_Ckl_Edit.ps1
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\setNISTPolicies.ps1
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\enableAutoAdminLogon.ps1
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\checkClientStatus.ps1
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\save_VS_Script_ToLocalMachine.ps1
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\troubleshootConnectionIssues.ps1
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\informationFinder.ps1
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager WKS.exe.config
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager WKS.exe.manifest
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager WKS.application
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager WKS.exe
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager WKS.pdb
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.csproj.AssemblyReference.cache
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.AboutBox1.resources
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.Form1.resources
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.helpRunningScriptsForm.resources
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.remoteCommandsForm.resources
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.Help_Form.resources
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.Script_Help_Form.resources
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.aboutForm.resources
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.Properties.Resources.resources
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.csproj.GenerateResource.cache
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.csproj.CoreCompileInputs.cache
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager WKS.exe.manifest
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager WKS.application
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager WKS.exe
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager WKS.pdb
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\copyItemToClient.ps1
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\copyFolderToClients.ps1
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\removeItemFromClient.ps1
+C:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\sendNetMessageToClients.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.csproj.AssemblyReference.cache
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.AboutBox1.resources
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.AppFlowLayoutPanel.resources
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.CUIPolicy.resources
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.requestAccessForm.resources
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.internalScriptViewer.resources
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.HomeForm.resources
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.dataBaseForm.resources
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.loginForm.resources
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.helpRunningScriptsForm.resources
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.remoteCommandsForm.resources
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.Help_Form.resources
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.Script_Help_Form.resources
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.aboutForm.resources
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.Properties.Resources.resources
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.csproj.GenerateResource.cache
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager WKS.exe
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager WKS.pdb
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Resources\InfoPaperDoDCUIProgram.pdf
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\SeaTrials.db
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\PowerShellCommands.docx
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\legalLogonNotice.txt
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\powerOffHosts.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\createClientSystemReport.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\evaluateSTIGScript.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501-CACI_CKL_COPIER_Evaluate-STIG.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501-CACI_CKL_EDITOR.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501_BaselineImage_Configuration.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501_Disk_Encryption.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501_TrialsImage_Configuration.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\README.txt
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\run_command_remote_host_v2.6.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\run_script_remote_host_v2.5.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\enable_Connection_To_Clients.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\set_Prod_Policies_On_Windows.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\addNetworkPrinter.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\e-s_Ckl_Edit.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\setNISTPolicies.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\checkClientStatus.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\save_VS_Script_ToLocalMachine.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\troubleshootConnectionIssues.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\informationFinder.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\copyItemToClient.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\copyFolderToClients.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\removeItemFromClient.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\sendNetMessageToClients.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\copyE-SCKLFiles.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\eval-STIGScanPrep.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\nessusScanPrep.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\setScanPolicies.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\clearEval-STIGOutputFolder.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\removeFolderContents.ps1
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager WKS.exe.config
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager WKS.exe.manifest
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager WKS.application
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager WKS.exe
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager WKS.pdb
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\EntityFramework.dll
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\EntityFramework.SqlServer.dll
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Microsoft.Bcl.HashCode.dll
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Buffers.dll
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Collections.Immutable.dll
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Data.SQLite.dll
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.IO.Pipelines.dll
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Memory.dll
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Numerics.Vectors.dll
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Text.Encodings.Web.dll
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Text.Json.dll
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Threading.Channels.dll
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.ValueTuple.dll
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\EntityFramework.xml
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\EntityFramework.SqlServer.xml
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Microsoft.Bcl.HashCode.xml
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Buffers.xml
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Collections.Immutable.xml
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Data.SQLite.xml
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.IO.Pipelines.xml
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Memory.xml
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Numerics.Vectors.xml
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Text.Encodings.Web.xml
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Text.Json.xml
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Threading.Channels.xml
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager WKS.exe.manifest
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager WKS.application
+D:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Tria.6927BDEA.Up2Date
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Resources\InfoPaperDoDCUIProgram.pdf
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\SeaTrials.db
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\legalLogonNotice.txt
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\powerOffHosts.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\README.txt
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\run_command_remote_host_v2.6.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\run_script_remote_host_v2.5.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\troubleshootConnectionIssues.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\informationFinder.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\copyItemToClient.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\copyFolderToClients.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\removeItemFromClient.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\sendNetMessageToClients.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\copyE-SCKLFiles.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\eval-STIGScanPrep.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\nessusScanPrep.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\setScanPolicies.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\clearEval-STIGOutputFolder.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\removeFolderContents.ps1
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\EntityFramework.dll
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\EntityFramework.SqlServer.dll
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Microsoft.Bcl.HashCode.dll
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Buffers.dll
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Collections.Immutable.dll
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Data.SQLite.dll
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Data.SQLite.EF6.dll
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Data.SQLite.Linq.dll
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.IO.Pipelines.dll
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Memory.dll
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Numerics.Vectors.dll
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Text.Encodings.Web.dll
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Text.Json.dll
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Threading.Channels.dll
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Threading.Tasks.Extensions.dll
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.ValueTuple.dll
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\EntityFramework.xml
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\EntityFramework.SqlServer.xml
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Microsoft.Bcl.HashCode.xml
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Buffers.xml
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Collections.Immutable.xml
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Data.SQLite.xml
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.IO.Pipelines.xml
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Memory.xml
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Numerics.Vectors.xml
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Text.Encodings.Web.xml
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Text.Json.xml
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Threading.Channels.xml
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Threading.Tasks.Extensions.xml
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.AboutBox1.resources
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.AppFlowLayoutPanel.resources
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.CUIPolicy.resources
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.requestAccessForm.resources
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.internalScriptViewer.resources
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.HomeForm.resources
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.dataBaseForm.resources
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.loginForm.resources
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.helpRunningScriptsForm.resources
+I:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Tria.6927BDEA.Up2Date
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Resources\InfoPaperDoDCUIProgram.pdf
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\SeaTrials.db
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\PowerShellCommands.docx
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\legalLogonNotice.txt
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\powerOffHosts.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\createClientSystemReport.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\evaluateSTIGScript.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501-CACI_CKL_COPIER_Evaluate-STIG.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501-CACI_CKL_EDITOR.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501_BaselineImage_Configuration.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501_Disk_Encryption.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\PMS501_TrialsImage_Configuration.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\README.txt
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\run_command_remote_host_v2.6.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\run_script_remote_host_v2.5.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\enable_Connection_To_Clients.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\set_Prod_Policies_On_Windows.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\addNetworkPrinter.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\e-s_Ckl_Edit.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\setNISTPolicies.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\checkClientStatus.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\save_VS_Script_ToLocalMachine.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\troubleshootConnectionIssues.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\informationFinder.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\copyItemToClient.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\copyFolderToClients.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\removeItemFromClient.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\sendNetMessageToClients.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\copyE-SCKLFiles.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\eval-STIGScanPrep.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\nessusScanPrep.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\setScanPolicies.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\clearEval-STIGOutputFolder.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\VS Scripts\removeFolderContents.ps1
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\EntityFramework.dll
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\EntityFramework.SqlServer.dll
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Microsoft.Bcl.HashCode.dll
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Buffers.dll
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Collections.Immutable.dll
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Data.SQLite.dll
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Data.SQLite.EF6.dll
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Data.SQLite.Linq.dll
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.IO.Pipelines.dll
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Memory.dll
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Numerics.Vectors.dll
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Text.Encodings.Web.dll
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Text.Json.dll
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Threading.Channels.dll
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Threading.Tasks.Extensions.dll
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.ValueTuple.dll
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\EntityFramework.xml
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\EntityFramework.SqlServer.xml
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Microsoft.Bcl.HashCode.xml
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Buffers.xml
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Collections.Immutable.xml
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Data.SQLite.xml
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.IO.Pipelines.xml
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Memory.xml
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Numerics.Vectors.xml
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Text.Encodings.Web.xml
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Text.Json.xml
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Threading.Channels.xml
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\System.Threading.Tasks.Extensions.xml
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.csproj.AssemblyReference.cache
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.AboutBox1.resources
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.AppFlowLayoutPanel.resources
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.CUIPolicy.resources
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.requestAccessForm.resources
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.internalScriptViewer.resources
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.HomeForm.resources
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.dataBaseForm.resources
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.loginForm.resources
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.helpRunningScriptsForm.resources
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.remoteCommandsForm.resources
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.Help_Form.resources
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.Script_Help_Form.resources
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.aboutForm.resources
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.Properties.Resources.resources
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.csproj.GenerateResource.cache
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.csproj.CoreCompileInputs.cache
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Tria.6927BDEA.Up2Date
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager.exe.config
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager.exe.manifest
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager.application
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager.exe
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\bin\Debug\Sea Trial Client Manager.pdb
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.exe.manifest
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.application
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.exe
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.pdb
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.TrialNotesForm.resources
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.EnterTrialInfoForm.resources
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.LoginHelpForm.resources
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea Trial Client Manager.exe.config
+H:\Visual Studio Projects\Windows\Sea Trial Client Manager\obj\Debug\Sea_Trials_Script_Launcher.BetaDisclaimerForm.resources

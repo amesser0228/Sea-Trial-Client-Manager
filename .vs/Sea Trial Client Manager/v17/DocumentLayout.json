@@ -1,0 +1,379 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|h:\\visual studio projects\\windows\\sea trial client manager\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|solutionrelative:homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\generalhelpform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|solutionrelative:generalhelpform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\betadisclaimerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|solutionrelative:betadisclaimerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|solutionrelative:homeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\betadisclaimerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|solutionrelative:betadisclaimerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\aboutform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|solutionrelative:aboutform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\aboutform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|solutionrelative:aboutform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\aboutbox1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|solutionrelative:aboutbox1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\tooltiphelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|solutionrelative:tooltiphelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\databaseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|solutionrelative:databaseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\databaseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|solutionrelative:databaseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Sea Trial Client Manager||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|solutionrelative:properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\databaseform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|solutionrelative:databaseform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\scripthelpform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|solutionrelative:scripthelpform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\vs scripts\\setnistpolicies.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|solutionrelative:vs scripts\\setnistpolicies.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\vs scripts\\set_prod_policies_on_windows.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|solutionrelative:vs scripts\\set_prod_policies_on_windows.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\vs scripts\\sendnetmessagetoclients.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|solutionrelative:vs scripts\\sendnetmessagetoclients.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\helprunningscriptsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|solutionrelative:helprunningscriptsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "helpRunningScriptsForm.cs [Design]",
+              "DocumentMoniker": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\helpRunningScriptsForm.cs",
+              "RelativeDocumentMoniker": "helpRunningScriptsForm.cs",
+              "ToolTip": "C:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\helpRunningScriptsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T16:16:29.863Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeForm.cs",
+              "DocumentMoniker": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\HomeForm.cs",
+              "RelativeDocumentMoniker": "HomeForm.cs",
+              "ToolTip": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\HomeForm.cs",
+              "RelativeToolTip": "HomeForm.cs",
+              "ViewState": "AgIAAHYDAAAAAAAAAAAcwJUDAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T13:30:49.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "generalHelpForm.cs [Design]",
+              "DocumentMoniker": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\generalHelpForm.cs",
+              "RelativeDocumentMoniker": "generalHelpForm.cs",
+              "ToolTip": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\generalHelpForm.cs [Design]",
+              "RelativeToolTip": "generalHelpForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T19:06:34.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "aboutForm.cs",
+              "DocumentMoniker": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\aboutForm.cs",
+              "RelativeDocumentMoniker": "aboutForm.cs",
+              "ToolTip": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\aboutForm.cs",
+              "RelativeToolTip": "aboutForm.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T18:57:00.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "aboutForm.cs [Design]",
+              "DocumentMoniker": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\aboutForm.cs",
+              "RelativeDocumentMoniker": "aboutForm.cs",
+              "ToolTip": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\aboutForm.cs [Design]",
+              "RelativeToolTip": "aboutForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T18:56:56.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AboutBox1.cs [Design]",
+              "DocumentMoniker": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\AboutBox1.cs",
+              "RelativeDocumentMoniker": "AboutBox1.cs",
+              "ToolTip": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\AboutBox1.cs [Design]",
+              "RelativeToolTip": "AboutBox1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T18:56:51.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BetaDisclaimerForm.cs [Design]",
+              "DocumentMoniker": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\BetaDisclaimerForm.cs",
+              "RelativeDocumentMoniker": "BetaDisclaimerForm.cs",
+              "ToolTip": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\BetaDisclaimerForm.cs [Design]",
+              "RelativeToolTip": "BetaDisclaimerForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T18:49:35.331Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeForm.cs [Design]",
+              "DocumentMoniker": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\HomeForm.cs",
+              "RelativeDocumentMoniker": "HomeForm.cs",
+              "ToolTip": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\HomeForm.cs [Design]",
+              "RelativeToolTip": "HomeForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T13:37:22.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BetaDisclaimerForm.cs",
+              "DocumentMoniker": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\BetaDisclaimerForm.cs",
+              "RelativeDocumentMoniker": "BetaDisclaimerForm.cs",
+              "ToolTip": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\BetaDisclaimerForm.cs",
+              "RelativeToolTip": "BetaDisclaimerForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T18:58:28.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "dataBaseForm.cs [Design]",
+              "DocumentMoniker": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\dataBaseForm.cs",
+              "RelativeDocumentMoniker": "dataBaseForm.cs",
+              "ToolTip": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\dataBaseForm.cs [Design]",
+              "RelativeToolTip": "dataBaseForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T13:14:34.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T23:14:01.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Properties\\AssemblyInfo.cs",
+              "ToolTip": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "Properties\\AssemblyInfo.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACMAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T23:07:24.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "dataBaseForm.cs",
+              "DocumentMoniker": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\dataBaseForm.cs",
+              "RelativeDocumentMoniker": "dataBaseForm.cs",
+              "ToolTip": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\dataBaseForm.cs",
+              "RelativeToolTip": "dataBaseForm.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAQwF4AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T23:00:18.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "toolTipHelper.cs",
+              "DocumentMoniker": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\toolTipHelper.cs",
+              "RelativeDocumentMoniker": "toolTipHelper.cs",
+              "ToolTip": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\toolTipHelper.cs",
+              "RelativeToolTip": "toolTipHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T22:23:44.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Sea Trial Client Manager",
+              "DocumentMoniker": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\Sea Trial Client Manager.csproj",
+              "RelativeDocumentMoniker": "Sea Trial Client Manager.csproj",
+              "ToolTip": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\Sea Trial Client Manager.csproj",
+              "RelativeToolTip": "Sea Trial Client Manager.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-24T13:53:34.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "dataBaseForm.Designer.cs",
+              "DocumentMoniker": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\dataBaseForm.Designer.cs",
+              "RelativeDocumentMoniker": "dataBaseForm.Designer.cs",
+              "ToolTip": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\dataBaseForm.Designer.cs",
+              "RelativeToolTip": "dataBaseForm.Designer.cs",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAcwKUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T13:21:10.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "scriptHelpForm.cs",
+              "DocumentMoniker": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\scriptHelpForm.cs",
+              "RelativeDocumentMoniker": "scriptHelpForm.cs",
+              "ToolTip": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\scriptHelpForm.cs",
+              "RelativeToolTip": "scriptHelpForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T00:21:33.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T15:30:53.799Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "sendNetMessageToClients.ps1",
+              "DocumentMoniker": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\VS Scripts\\sendNetMessageToClients.ps1",
+              "RelativeDocumentMoniker": "VS Scripts\\sendNetMessageToClients.ps1",
+              "ToolTip": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\VS Scripts\\sendNetMessageToClients.ps1",
+              "RelativeToolTip": "VS Scripts\\sendNetMessageToClients.ps1",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAAAKkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-06T16:47:55.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "setNISTPolicies.ps1",
+              "DocumentMoniker": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\VS Scripts\\setNISTPolicies.ps1",
+              "RelativeDocumentMoniker": "VS Scripts\\setNISTPolicies.ps1",
+              "ToolTip": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\VS Scripts\\setNISTPolicies.ps1",
+              "RelativeToolTip": "VS Scripts\\setNISTPolicies.ps1",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-10T18:32:46.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "set_Prod_Policies_On_Windows.ps1",
+              "DocumentMoniker": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\VS Scripts\\set_Prod_Policies_On_Windows.ps1",
+              "RelativeDocumentMoniker": "VS Scripts\\set_Prod_Policies_On_Windows.ps1",
+              "ToolTip": "H:\\Visual Studio Projects\\Windows\\Sea Trial Client Manager\\VS Scripts\\set_Prod_Policies_On_Windows.ps1",
+              "RelativeToolTip": "VS Scripts\\set_Prod_Policies_On_Windows.ps1",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-10T18:27:09.721Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
