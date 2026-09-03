@@ -1,0 +1,145 @@
+combobox1 existing code:
+
+    string scriptPath = string.Empty;
+
+    switch (comboBox1.SelectedItem.ToString())
+    {
+        case "Create Client Report":
+            scriptPath = @"VS Scripts\createClientSystemReport.ps1"; // specify the path for Script 1
+            break;
+        case "Script 2":
+            scriptPath = @"VS Scripts\PMS501-CACI_CKL_COPIER_Evaluate-STIG.ps1"; // specify the path for Script 2
+            break;
+        case "Script 3":
+            scriptPath = @"C:\Path\To\Your\Script3.bat"; // specify the path for Script 3
+            break;
+        default:
+            MessageBox.Show("Please select a valid script.");
+            return;
+    }
+
+    // Run the script
+    //System.Diagnostics.Process.Start(scriptPath);
+    ProcessStartInfo startInfo = new ProcessStartInfo();
+    startInfo.FileName = "powershell.exe";
+    startInfo.Arguments = $"-ExecutionPolicy Bypass -File \"{scriptPath}\"";
+    startInfo.Verb = "runas"; // Run as admin console
+
+    Process process = new Process();
+    process.StartInfo = startInfo;
+    process.Start();
+}
+
+private void Form1_Load(object sender, EventArgs e)
+{
+    comboBox1.Items.Add("Create Client Report");
+    comboBox1.Items.Add("Script 2");
+    comboBox1.Items.Add("Script 3");
+}
+
+comboBox1 code:
+private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+{
+    string fileName = string.Empty;
+    string folderPath = @"VS Scripts\";
+
+    switch (comboBox1.SelectedItem.ToString())
+    {
+        case "Restart All Clients":
+            fileName = "createClientSystemReport.ps1";
+            break;
+        case "Script 2":
+            fileName = "PMS501-CACI_CKL_COPIER_Evaluate-STIG.ps1";
+            break;
+        case "Set Prod Policies on Windows Clients":
+            fileName = "set_Prod_Policies_On_Windows.ps1"; // This is an absolute path, adjust accordingly
+            break;
+        default:
+            MessageBox.Show("Please select a valid script.");
+            return;
+    }
+
+    string filePath = Path.Combine(Environment.CurrentDirectory, folderPath, fileName);
+
+    if (!System.IO.File.Exists(filePath))
+    {
+        MessageBox.Show("Script file not found: " + filePath);
+        return;
+    }
+
+    try
+    {
+        ProcessStartInfo startInfo = new ProcessStartInfo();
+        startInfo.FileName = "powershell.exe";
+        startInfo.Arguments = $"-ExecutionPolicy Bypass -File \"{filePath}\"";
+        startInfo.Verb = "runas"; // Run as admin console
+
+        Process process = new Process();
+        process.StartInfo = startInfo;
+        process.Start();
+    }
+    catch (Exception ex)
+    {
+        MessageBox.Show("Error executing script: " + ex.Message);
+    }
+}
+
+private void Form1_Load(object sender, EventArgs e)
+{
+    comboBox1.Items.Add("Restart All Clients");
+    comboBox1.Items.Add("Add Printer All Clients");
+    comboBox1.Items.Add("Set Prod Policies on Windows Clients");
+    comboBox1.Items.Add("Baseline Image Configuration");
+}
+
+aboutForm Constructor:
+'using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Sea_Trials_Script_Launcher
+{
+    public partial class aboutForm : Form
+    {
+        private string _aboutText;
+        public aboutForm(string aboutText)
+        {
+            InitializeComponent();
+            _aboutText = aboutText;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            richTextBox1.Text = _aboutText;
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aboutForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}'
+
+aboutForm helpmenuitem:
+' private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+ {
+     string aboutText = "Here is the help information you need to add for the user to see.";
+     aboutForm aboutFormText = new aboutForm(aboutText);
+     aboutFormText.ShowDialog();
+ }'
