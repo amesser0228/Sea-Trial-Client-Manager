@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|g:\\visual studio projects\\testing\\stcm\\windows-upc\\sea trial client manager\\vs scripts\\run_poweroff_hosts.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|solutionrelative:vs scripts\\run_poweroff_hosts.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\vs scripts\\pms501-caci_ckl_copier_evaluate-stig.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|solutionrelative:vs scripts\\pms501-caci_ckl_copier_evaluate-stig.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\vs scripts\\poweroffhosts.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|solutionrelative:vs scripts\\poweroffhosts.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|g:\\visual studio projects\\testing\\stcm\\windows-upc\\sea trial client manager\\vs scripts\\pms501-caci_ckl_copier_evaluate-stig.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|solutionrelative:vs scripts\\pms501-caci_ckl_copier_evaluate-stig.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{51D77FA2-FC51-478A-A65E-121A34D5047C}|Sea Trial Client Manager.csproj|G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\vs scripts\\run_command_remote_host_v2.5.ps1||{3B902123-F8A7-4915-9F01-361F908088D0}",
@@ -202,19 +194,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "run_poweroff_hosts.ps1",
-              "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\VS Scripts\\run_poweroff_hosts.ps1",
-              "RelativeDocumentMoniker": "VS Scripts\\run_poweroff_hosts.ps1",
-              "ToolTip": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\VS Scripts\\run_poweroff_hosts.ps1",
-              "RelativeToolTip": "VS Scripts\\run_poweroff_hosts.ps1",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-10-30T15:31:18.035Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "PMS501-CACI_CKL_COPIER_Evaluate-STIG.ps1",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\VS Scripts\\PMS501-CACI_CKL_COPIER_Evaluate-STIG.ps1",
               "RelativeDocumentMoniker": "VS Scripts\\PMS501-CACI_CKL_COPIER_Evaluate-STIG.ps1",
@@ -227,19 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": ".gitignore",
-              "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-10-30T15:06:10.537Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "copyFolderToClients.ps1",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\VS Scripts\\copyFolderToClients.ps1",
               "RelativeDocumentMoniker": "VS Scripts\\copyFolderToClients.ps1",
@@ -251,7 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
               "Title": "run_command_remote_host_v2.8.ps1",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\VS Scripts\\run_command_remote_host_v2.8.ps1",
               "RelativeDocumentMoniker": "VS Scripts\\run_command_remote_host_v2.8.ps1",
@@ -263,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "RemoteClientNetworkInformationForm.cs",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\RemoteClientNetworkInformationForm.cs",
               "RelativeDocumentMoniker": "RemoteClientNetworkInformationForm.cs",
@@ -283,12 +250,11 @@
               "RelativeToolTip": "VS Scripts\\powerOffHosts.ps1",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAGIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-10-30T14:26:06.356Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-30T14:26:06.356Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "run_command_remote_host_v2.5.ps1",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\VS Scripts\\run_command_remote_host_v2.5.ps1",
               "RelativeDocumentMoniker": "VS Scripts\\run_command_remote_host_v2.5.ps1",
@@ -300,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "ConfigMenuForm.cs [Design]",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\ConfigMenuForm.cs",
               "RelativeDocumentMoniker": "ConfigMenuForm.cs",
@@ -311,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "HomeForm.cs [Design]",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\HomeForm.cs",
               "RelativeDocumentMoniker": "HomeForm.cs",
@@ -322,7 +288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "copyItemToClient.ps1",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\VS Scripts\\copyItemToClient.ps1",
               "RelativeDocumentMoniker": "VS Scripts\\copyItemToClient.ps1",
@@ -334,7 +300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "HomeForm.cs",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\HomeForm.cs",
               "RelativeDocumentMoniker": "HomeForm.cs",
@@ -346,7 +312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "aboutForm.cs [Design]",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\aboutForm.cs",
               "RelativeDocumentMoniker": "aboutForm.cs",
@@ -357,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 13,
               "Title": "UserRemoteCredentials.cs",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\UserRemoteCredentials.cs",
               "RelativeDocumentMoniker": "UserRemoteCredentials.cs",
@@ -369,7 +335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
               "Title": "toolTipHelper.cs",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\toolTipHelper.cs",
               "RelativeDocumentMoniker": "toolTipHelper.cs",
@@ -381,7 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 12,
               "Title": "Sea Trial Client Manager",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\Sea Trial Client Manager.csproj",
               "RelativeDocumentMoniker": "Sea Trial Client Manager.csproj",
@@ -392,7 +358,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 14,
               "Title": "RemoteCredentialsForm.cs",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\remoteCredentialsForm.cs",
               "RelativeDocumentMoniker": "remoteCredentialsForm.cs",
@@ -404,7 +370,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 15,
               "Title": "UserRemoteCredentials.cs [Design]",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\UserRemoteCredentials.cs",
               "RelativeDocumentMoniker": "UserRemoteCredentials.cs",
@@ -415,7 +381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 16,
               "Title": "setNISTPolicies.ps1",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\VS Scripts\\setNISTPolicies.ps1",
               "RelativeDocumentMoniker": "VS Scripts\\setNISTPolicies.ps1",
@@ -427,7 +393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 17,
               "Title": "set_Prod_Policies_On_Windows.ps1",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\VS Scripts\\set_Prod_Policies_On_Windows.ps1",
               "RelativeDocumentMoniker": "VS Scripts\\set_Prod_Policies_On_Windows.ps1",
@@ -439,7 +405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 19,
               "Title": "RemoteClientNetworkInformationForm.cs [Design]",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\RemoteClientNetworkInformationForm.cs",
               "RelativeDocumentMoniker": "RemoteClientNetworkInformationForm.cs",
@@ -450,7 +416,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 18,
               "Title": "RemoteCredentialsForm.cs [Design]",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\remoteCredentialsForm.cs",
               "RelativeDocumentMoniker": "remoteCredentialsForm.cs",
@@ -461,7 +427,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 23,
               "Title": "VS_Scripts_Helper.cs",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\VS_Scripts_Helper.cs",
               "RelativeDocumentMoniker": "VS_Scripts_Helper.cs",
@@ -473,7 +439,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 20,
               "Title": "EnterTrialInfoForm.cs [Design]",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\EnterTrialInfoForm.cs",
               "RelativeDocumentMoniker": "EnterTrialInfoForm.cs",
@@ -484,7 +450,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 22,
               "Title": "internalScriptViewer.cs [Design]",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\internalScriptViewer.cs",
               "RelativeDocumentMoniker": "internalScriptViewer.cs",
@@ -495,7 +461,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 21,
               "Title": "internalScriptViewer.cs",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\internalScriptViewer.cs",
               "RelativeDocumentMoniker": "internalScriptViewer.cs",
@@ -507,7 +473,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 24,
               "Title": "ConfigMenuForm.cs",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\ConfigMenuForm.cs",
               "RelativeDocumentMoniker": "ConfigMenuForm.cs",
@@ -519,7 +485,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 26,
               "Title": "AppFlowLayoutPanel.cs [Design]",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\AppFlowLayoutPanel.cs",
               "RelativeDocumentMoniker": "AppFlowLayoutPanel.cs",
@@ -530,7 +496,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 25,
               "Title": "BetaDisclaimerForm.cs [Design]",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\BetaDisclaimerForm.cs",
               "RelativeDocumentMoniker": "BetaDisclaimerForm.cs",
@@ -541,7 +507,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 27,
               "Title": "userCredentialAPI.txt",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\userCredentialAPI.txt",
               "RelativeDocumentMoniker": "userCredentialAPI.txt",
@@ -553,7 +519,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 28,
               "Title": "sendNetMessageToClients.ps1",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\VS Scripts\\sendNetMessageToClients.ps1",
               "RelativeDocumentMoniker": "VS Scripts\\sendNetMessageToClients.ps1",
@@ -565,7 +531,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 29,
               "Title": "loginForm.cs [Design]",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\loginForm.cs",
               "RelativeDocumentMoniker": "loginForm.cs",
@@ -576,7 +542,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 30,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\Properties\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "Properties\\AssemblyInfo.cs",
@@ -588,7 +554,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 31,
               "Title": "loginForm.cs",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\loginForm.cs",
               "RelativeDocumentMoniker": "loginForm.cs",
@@ -600,7 +566,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 33,
               "Title": "testScript.ps1",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\VS Scripts\\testScript.ps1",
               "RelativeDocumentMoniker": "VS Scripts\\testScript.ps1",
@@ -612,7 +578,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 32,
               "Title": "run_script_remote_host_v2.7.ps1",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\VS Scripts\\run_script_remote_host_v2.7.ps1",
               "RelativeDocumentMoniker": "VS Scripts\\run_script_remote_host_v2.7.ps1",
@@ -624,7 +590,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 34,
               "Title": "addNetworkPrinter.ps1",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\VS Scripts\\addNetworkPrinter.ps1",
               "RelativeDocumentMoniker": "VS Scripts\\addNetworkPrinter.ps1",
@@ -636,7 +602,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 35,
               "Title": "PMS501_Disk_Encryption.ps1",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\VS Scripts\\PMS501_Disk_Encryption.ps1",
               "RelativeDocumentMoniker": "VS Scripts\\PMS501_Disk_Encryption.ps1",
@@ -648,7 +614,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 36,
               "Title": "enable_Connection_To_Clients.ps1",
               "DocumentMoniker": "G:\\Visual Studio Projects\\Testing\\STCM\\Windows-UPC\\Sea Trial Client Manager\\VS Scripts\\enable_Connection_To_Clients.ps1",
               "RelativeDocumentMoniker": "VS Scripts\\enable_Connection_To_Clients.ps1",
