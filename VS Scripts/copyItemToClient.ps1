@@ -1,4 +1,39 @@
-﻿# Checks if the script is running as an administrator #
+﻿param(
+    [string]$CredentialUsernamePath,
+    [string]$CredentialPasswordPath,
+    [string]$BeginDeviceIDPath,
+    [string]$EndDeviceIDPath,
+    [string]$IPPrefixPath
+)
+
+$remoteUsername = Get-Content -Path $CredentialUsernamePath
+$remotePassword = Get-Content -Path $CredentialPasswordPath
+$beginningDeviceID = Get-Content -Path $BeginDeviceIDPath
+$endingDeviceID = Get-Content -Path $EndDeviceIDPath
+$remoteIPPrefix = Get-Content -Path $IPPrefixPath
+
+Write-Host "Remote Username:" -NoNewline
+Write-Host $remoteUsername -ForegroundColor Green
+Write-Host Remote IP range: -NoNewline
+Write-Host $remoteIPPrefix"."$beginningDeviceID "-" $endingDeviceID -ForegroundColor Green
+
+$remoteUsername = Get-Content -Path $CredentialUsernamePath
+$remotePassword = Get-Content -Path $CredentialPasswordPath
+$beginningDeviceID = Get-Content -Path $BeginDeviceIDPath
+$endingDeviceID = Get-Content -Path $EndDeviceIDPath
+$remoteIPPrefix = Get-Content -Path $IPPrefixPath
+
+# Provide credentials for hosts
+$remoteSecurePassword = ConvertTo-SecureString $remotePassword -AsPlainText -Force
+$credential = New-Object System.Management.Automation.PSCredential ($remoteUsername, $remoteSecurePassword)
+
+#RemoteIPs
+$remoteIPAddresses = @()
+for ($i = [int]$beginningDeviceID; $i -le [int]$endingDeviceID; $i++) {
+    $remoteIPAddresses += "$($remoteIPPrefix).$($i)"
+}
+
+<# Checks if the script is running as an administrator #
     $isAdmin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")
 
 # If the script is not running as an administrator, re-launches the script with elevated privileges #
@@ -6,6 +41,7 @@ if (-not $isAdmin) {
     Start-Process powershell.exe "-File `"$PSCommandPath`"" -Verb RunAs
     exit
     }
+    #>
 
 #Open dialog box prompt to select file
 Add-Type -AssemblyName System.Windows.Forms
@@ -16,34 +52,6 @@ $openFileDialog.Filter = "All Files (*.*)|*.*" #for all file types:  "All Files 
 
 if ($openFileDialog.ShowDialog() -eq 'OK') {
     $filePath = $openFileDialog.FileName
-
-# Provide credentials for hosts
-$securePassword = ConvertTo-SecureString "L-3Communicati0ns!" -AsPlainText -Force
-$lcsCredential = New-Object System.Management.Automation.PSCredential ("LCS", $securePassword)
-$cvnCredential = New-Object System.Management.Automation.PSCredential ("CVN", $securePassword)
-
-
-$data = @(
-    @{ Name = "Mobile"; Value = "1" },
-    @{ Name = "Marinette"; Value = "2" }
-    @{ Name = "CVN"; Value = "3" }
-)
-
-# Create a border and format the table
-$border = "┌────────────┬──────────┐"
-$borderBottom = "└────────────┴──────────┘"
-
-Write-Output $border
-Write-Output "│ Batch      │ Number   │"
-Write-Output $border.Replace("┌", "├").Replace("┐", "┤")
-
-foreach ($item in $data) {
-    Write-Output ("│ {0,-9}  │ {1,-9}│" -f $item.Name, $item.Value)
-}
-
-Write-Output $borderBottom
-
-$whichBatch = Read-Host "Select batch number"
 
 Write-Host "File selected to copy: $filePath`n`n" -ForegroundColor Yellow
 
@@ -64,36 +72,7 @@ $flowLayoutPanel.Dock = [System.Windows.Forms.DockStyle]::Fill
 $flowLayoutPanel.FlowDirection = [System.Windows.Forms.FlowDirection]::TopDown
 $flowLayoutPanel.WrapContents = $false
 
-#MOB
-$mobClients = @()
-for ($i = 201; $i -le 223; $i++) {
-    $mobClients += "192.168.56.$i"
-}
-
-#MAR
-$marClients = @()
-for ($i = 101; $i -le 123; $i++) {
-    $marClients += "192.168.56.$i"
-}
-
-#CVN
-$cvnClients = @()
-for ($i = 101; $i -le 148; $i++) {
-    $cvnClients += "192.168.79.$i"
-}
-
-#Get batch and credential
-if ($whichBatch -eq 1) {
-    $batch = $mobClients 
-    $credential = $lcsCredential}
-elseif ($whichBatch -eq 2) {
-    $batch = $marClients
-    $credential = $lcsCredential}
-elseif ($whichBatch -eq 3) {
-    $batch = $cvnClients
-    $credential = $cvnCredential}
-
-foreach ($client in $batch) {
+foreach ($client in $remoteIPAddresses) {
     $checkbox = New-Object System.Windows.Forms.CheckBox
     $checkbox.Text = $client
     $flowLayoutPanel.Controls.Add($checkbox)
@@ -113,6 +92,7 @@ $flowLayoutPanel.Controls.Add($selectAllButton)
 
 
 # Add a button to submit the selected IP addresses
+$success = $false
 $submitButton = New-Object System.Windows.Forms.Button
 $submitButton.Text = "Submit"
 $submitButton.Add_Click({
@@ -184,6 +164,7 @@ Admin Only Directory:
             Write-Host "Temporary PSDrive " -NoNewline
             Write-Host "Remote " -ForegroundColor Cyan -NoNewline
             Write-Host "has been removed."
+            $success = $true
             }
             catch {
             Write-Warning "File could not be copied to destination because there was an issue connecting to $ip or the supplied parameters were incorrect."
@@ -195,7 +176,12 @@ Admin Only Directory:
             }
         }
     }
+    if($success) {
     write-Host "`nAll files copied" -ForegroundColor Green
+    }
+    else {
+    Write-Host "Files failed to copy"
+    }
     $form.Close()
 })
 $flowLayoutPanel.Controls.Add($submitButton)

@@ -5,19 +5,69 @@ Synospsis:
     2. Shuts down all hosts in IP scope.
 #>
 
+param(
+    [string]$CredentialUsernamePath,
+    [string]$CredentialPasswordPath,
+    [string]$BeginDeviceIDPath,
+    [string]$EndDeviceIDPath,
+    [string]$IPPrefixPath
+)
+
+$remoteUsername = Get-Content -Path $CredentialUsernamePath
+$remotePassword = Get-Content -Path $CredentialPasswordPath
+$beginningDeviceID = Get-Content -Path $BeginDeviceIDPath
+$endingDeviceID = Get-Content -Path $EndDeviceIDPath
+$remoteIPPrefix = Get-Content -Path $IPPrefixPath
+
+Write-Host "Remote Username:" -NoNewline
+Write-Host $remoteUsername -ForegroundColor Green
+Write-Host Remote IP range: -NoNewline
+Write-Host $remoteIPPrefix"."$beginningDeviceID "-" $endingDeviceID -ForegroundColor Green
+
+$remoteUsername = Get-Content -Path $CredentialUsernamePath
+$remotePassword = Get-Content -Path $CredentialPasswordPath
+$beginningDeviceID = Get-Content -Path $BeginDeviceIDPath
+$endingDeviceID = Get-Content -Path $EndDeviceIDPath
+$remoteIPPrefix = Get-Content -Path $IPPrefixPath
+
+# Provide credentials for hosts
+$remoteSecurePassword = ConvertTo-SecureString $remotePassword -AsPlainText -Force
+$credential = New-Object System.Management.Automation.PSCredential ($remoteUsername, $remoteSecurePassword)
+
+#RemoteIPs
+$remoteIPAddresses = @()
+for ($i = [int]$beginningDeviceID; $i -le [int]$endingDeviceID; $i++) {
+    $remoteIPAddresses += "$($remoteIPPrefix).$($i)"
+}
+
+Add-Type -AssemblyName System.Windows.Forms
+Add-Type -AssemblyName System.Drawing
+
+$form = New-Object System.Windows.Forms.Form
+$form.Text = "Select Computers to Power Off"
+$form.Size = New-Object System.Drawing.Size(350, 500)
+$form.StartPosition = "CenterScreen"
+
+$flowLayoutPanel = New-Object System.Windows.Forms.FlowLayoutPanel
+$flowLayoutPanel.AutoScroll = $true
+$flowLayoutPanel.Dock = [System.Windows.Forms.DockStyle]::Fill
+$flowLayoutPanel.FlowDirection = [System.Windows.Forms.FlowDirection]::TopDown
+$flowLayoutPanel.WrapContents = $false
+
 
 Write-Host "
-#####  ###  #           # #####  #####      ###   #####  #####     #   #   ###    #####   #####   #####
-#   # #   #  #         #  #      #   #     #   #  #      #         #   #  #   #  #          #    #
-####  #   #   #   #   #   ###    ####      #   #  ###    ###       #####  #   #   ####      #     ####
-#     #   #    # # # #    #      #   #     #   #  #      #         #   #  #   #       #     #         #
-#      ###      #   #     #####  #   #      ###   #      #         #   #   ###   #####      #    #####
+- - -   - -   -         -  - - -  - - -    - -   - - -  - - -   -   -   - -    - -   - - -   - -
+-   -  -   -  -         -  -	  -   -   -   -  -      -       -   -  -   -  -        -    -
+- - -  -   -   -       -   - - -  - -     -   -  - -    - -     - - -  -   -   - -     -     - -
+-      -   -    -  -  -    -	  -  -    -   -  -      -       -   -  -   -      -    -        -
+-       - -      -   -     - - -  -   -    - -   -      -       -   -   - -    - -     -     - -
 
-                                         -PMS501/CVN ETC Clients-
+                                       -PMS501/CVN ETC Clients-
 
-NOTES:
+IMPORTANT:
 1. Check client IP(s) to recieve power down command. Click submit.
 2. Verify ative machines before running this script.
+3. Machines running ETC will NOT be powered off.
 " -ForegroundColor Yellow
 
 # Checks if the script is running as an administrator #
@@ -35,61 +85,17 @@ if ($Host.Runspace.ApartmentState -ne "STA") {
     throw "This script must be run in STA mode."
 }
 
-$data = @(
-    @{ Name = "Mobile"; Value = "1" },
-    @{ Name = "Marinette"; Value = "2" }
-    @{ Name = "CVN"; Value = "3" }
-)
 
-# Create a border and format the table
-$border = "┌────────────┬──────────┐"
-$borderBottom = "└────────────┴──────────┘"
-
-Write-Output $border
-Write-Output "│ Batch      │ Number   │"
-Write-Output $border.Replace("┌", "├").Replace("┐", "┤")
-
-foreach ($item in $data) {
-    Write-Output ("│ {0,-9}  │ {1,-9}│" -f $item.Name, $item.Value)
+$runScript = Read-Host "`n`nPress enter to continue or Q to quit"
+if($runScript -eq "Q" -or $runScript -eq "q") {
+    return
 }
-
-Write-Output $borderBottom
-
-$whichBatch = Read-Host "Select batch number"
-
-# Load Windows Forms assembly
-Add-Type -AssemblyName System.Windows.Forms
-Add-Type -AssemblyName System.Drawing
-
-# Create the form
-$form = New-Object System.Windows.Forms.Form
-$form.Text = "Select Computers to Power Off"
-$form.Size = New-Object System.Drawing.Size(350, 500)
-$form.StartPosition = "CenterScreen"
-
-# Create a FlowLayoutPanel with AutoScroll enabled
-$flowLayoutPanel = New-Object System.Windows.Forms.FlowLayoutPanel
-$flowLayoutPanel.AutoScroll = $true
-$flowLayoutPanel.Dock = [System.Windows.Forms.DockStyle]::Fill
-$flowLayoutPanel.FlowDirection = [System.Windows.Forms.FlowDirection]::TopDown
-$flowLayoutPanel.WrapContents = $false
-
-#MOB
-$mobClients = @()
-for ($i = 201; $i -le 223; $i++) {
-    $mobClients += "192.168.56.$i"
+elseif($runScript -eq "") {
+    Write-Host "`n`nRunning script..." -ForegroundColor Green
 }
-
-#MAR
-$marClients = @()
-for ($i = 101; $i -le 123; $i++) {
-    $marClients += "192.168.56.$i"
-}
-
-#CVN
-$cvnClients = @()
-for ($i = 101; $i -le 148; $i++) {
-    $cvnClients += "192.168.79.$i"
+else {
+    Write-Host "Invalid Selection"
+    return
 }
 
 #loop Counter for num of reachable clients
@@ -101,24 +107,8 @@ $numRan = 0
 #loop Counter for num of unreachable clients
 $numFailed = 0
 
-# Provide credentials for hosts
-$securePassword = ConvertTo-SecureString "L-3Communicati0ns!" -AsPlainText -Force
-$lcsCredential = New-Object System.Management.Automation.PSCredential ("LCS", $securePassword)
-$cvnCredential = New-Object System.Management.Automation.PSCredential ("CVN", $securePassword)
 
-#Get batch and credential
-if ($whichBatch -eq 1) {
-        $batch = $mobClients 
-        $credential = $lcsCredential}
-    elseif ($whichBatch -eq 2) {
-        $batch = $marClients
-        $credential = $lcsCredential}
-    elseif ($whichBatch -eq 3) {
-        $batch = $cvnClients
-        $credential = $cvnCredential}
-
-
-foreach ($client in $batch) {
+foreach ($client in $remoteIPAddresses) {
     $checkbox = New-Object System.Windows.Forms.CheckBox
     $checkbox.Text = $client
     $flowLayoutPanel.Controls.Add($checkbox)
@@ -149,12 +139,22 @@ $flowLayoutPanel.Controls.Add($selectAllButton)
             if ($reply.Status -eq [System.Net.NetworkInformation.IPStatus]::Success) {
                 $numReplied += 1
                 try {
+                    Invoke-Command -ComputerName $ip -Credential $credential -ScriptBlock {
+                    param($ip)
+                    if(Get-Process | Where-Object {$_.Name -like "*ETC*"}) {
+                    Write-Host "Cannot shutdown $($ip) while ETC is open" -ForegroundColor Yellow
+                    }
+                    else {
+                    Get-Process | Where-Object {$_.MainWindowTitle} | Stop-Process -Force
                     Write-Host "Powering off $ip..." -ForegroundColor Green
-                    Stop-Computer -ComputerName $ip -Credential $credential -Force # Shut down clients
+                    Stop-Computer -Force # Shut down clients
+                    }
+                    } -ArgumentList $ip
+                    
                     $numRan += 1
                 }
                 catch {
-                    Write-Host "Cannot deliver command to $ip"
+                    Write-Host "Cannot deliver command to $ip. Error: $($_.Exception.Message)"
                 }
             }
             else {

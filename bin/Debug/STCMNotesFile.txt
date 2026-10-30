@@ -4,9 +4,13 @@ Underway - 06/11/25 04:15
 
 08:11 All clients Up
 
-Cap Doud - Insurv Captain
+Capt Doud - Insurv Captain
 
 
--------------------------------------- Client Performance Notes --------------------------------------
+-------------------------------------- Client Performance Notes -----------------------------------
 
 019 - Intermittent power issues. Randomly shuts off. May have liquid damage.
+
+DDG setup - 11/17/24
+
+PXE image

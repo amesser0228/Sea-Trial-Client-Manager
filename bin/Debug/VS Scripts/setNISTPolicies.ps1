@@ -9,6 +9,41 @@ This script performs a number of setup operations for the MSC Sea Trial Team.
 1. Sets NIST LGPs required for SCC
 #>
 
+param(
+    [string]$CredentialUsernamePath,
+    [string]$CredentialPasswordPath,
+    [string]$BeginDeviceIDPath,
+    [string]$EndDeviceIDPath,
+    [string]$IPPrefixPath
+)
+
+$remoteUsername = Get-Content -Path $CredentialUsernamePath
+$remotePassword = Get-Content -Path $CredentialPasswordPath
+$beginningDeviceID = Get-Content -Path $BeginDeviceIDPath
+$endingDeviceID = Get-Content -Path $EndDeviceIDPath
+$remoteIPPrefix = Get-Content -Path $IPPrefixPath
+
+Write-Host "Remote Username:" -NoNewline
+Write-Host $remoteUsername -ForegroundColor Green
+Write-Host Remote IP range: -NoNewline
+Write-Host $remoteIPPrefix"."$beginningDeviceID "-" $endingDeviceID -ForegroundColor Green
+
+$remoteUsername = Get-Content -Path $CredentialUsernamePath
+$remotePassword = Get-Content -Path $CredentialPasswordPath
+$beginningDeviceID = Get-Content -Path $BeginDeviceIDPath
+$endingDeviceID = Get-Content -Path $EndDeviceIDPath
+$remoteIPPrefix = Get-Content -Path $IPPrefixPath
+
+# Provide credentials for hosts
+$remoteSecurePassword = ConvertTo-SecureString $remotePassword -AsPlainText -Force
+$credential = New-Object System.Management.Automation.PSCredential ($remoteUsername, $remoteSecurePassword)
+
+#RemoteIPs
+$remoteIPAddresses = @()
+for ($i = [int]$beginningDeviceID; $i -le [int]$endingDeviceID; $i++) {
+    $remoteIPAddresses += "$($remoteIPPrefix).$($i)"
+}
+
 # Checks if the script is running as an administrator #
 $isAdmin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")
 
@@ -28,66 +63,6 @@ Write-Host "
 
 Write-Host "Sets NIST(STIG) policies on clients `n`n" -ForegroundColor Yellow
 
-$data = @(
-    @{ Name = "Mobile"; Value = "1" },
-    @{ Name = "Marinette"; Value = "2" }
-    @{ Name = "CVN"; Value = "3" }
-)
-
-# Create a border and format the table
-$border = "┌────────────┬──────────┐"
-$borderBottom = "└────────────┴──────────┘"
-
-Write-Output $border
-Write-Output "│ Batch      │ Number   │"
-Write-Output $border.Replace("┌", "├").Replace("┐", "┤")
-
-foreach ($item in $data) {
-    Write-Output ("│ {0,-9}  │ {1,-9}│" -f $item.Name, $item.Value)
-}
-
-Write-Output $borderBottom
-
-$whichBatch = Read-Host "Select batch number"
-
-if ($whichBatch -le 3) {
-
-#MOB
-$mobClients = @()
-for ($i = 201; $i -le 223; $i++) {
-    $mobClients += "192.168.56.$i"
-}
-
-#MAR
-$marClients = @()
-for ($i = 101; $i -le 123; $i++) {
-    $marClients += "192.168.56.$i"
-}
-
-#CVN
-$cvnClients = @()
-for ($i = 101; $i -le 148; $i++) {
-    $cvnClients += "192.168.79.$i"
-}
-
-
-# Provide credentials for hosts
-$securePassword = ConvertTo-SecureString "L-3Communicati0ns!" -AsPlainText -Force
-$lcsCredential = New-Object System.Management.Automation.PSCredential ("LCS", $securePassword)
-$cvnCredential = New-Object System.Management.Automation.PSCredential ("CVN", $securePassword)
-
-#Get batch and credential
-if ($whichBatch -eq 1) {
-        $batch = $mobClients 
-        $credential = $lcsCredential}
-    elseif ($whichBatch -eq 2) {
-        $batch = $marClients
-        $credential = $lcsCredential}
-    elseif ($whichBatch -eq 3) {
-        $batch = $cvnClients
-        $credential = $cvnCredential}
-
-
     write-host "`nSetting production policies on:`n"
     $timeout = 100 # Timeout in milliseconds
 
@@ -95,7 +70,7 @@ if ($whichBatch -eq 1) {
     #$logonNoticeTextPath = "C:\Users\$($env:USERNAME)\AppData\Roaming\VS_Scripts\legalLogonNotice.txt"
 
     Write-Host "Querying hosts. This may take a while...`n" -ForegroundColor Magenta
-    $batch | ForEach-Object {
+    $remoteIPAddresses | ForEach-Object {
         $ip = $_
         $ping = New-Object System.Net.NetworkInformation.Ping
         $reply = $ping.Send($ip, $timeout)
@@ -146,10 +121,10 @@ if ($whichBatch -eq 1) {
                 "DefaultUserName Removed`n"
 
                 #Set Windows dialog box title for the legal banner (V-220922)
-                $legalNoticeCaptionPath = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System"
-                $testLegalNoticeCaptionPath = Get-ItemProperty -Path $legalNoticeCaptionPath -Name "legalnoticecaption"
-                Set-ItemProperty -Path $legalNoticeCaptionPath -Name "legalnoticecaption" -Value "US Department of Defense Warning Statement" -Force
-                Write-Host "Property set to $($testLegalNoticeCaptionPath.legalnoticecaption)"
+                #$legalNoticeCaptionPath = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System"
+                #$testLegalNoticeCaptionPath = Get-ItemProperty -Path $legalNoticeCaptionPath -Name "legalnoticecaption"
+                #Set-ItemProperty -Path $legalNoticeCaptionPath -Name "legalnoticecaption" -Value "US Department of Defense Warning Statement" -Force
+                #Write-Host "Property set to $($testLegalNoticeCaptionPath.legalnoticecaption)"
 
                 #Set required legal notice to display before console logon (V-220921)
                 #$logonNoticeTextPath = "C:\Admin Only\DoD Banners\V-253445_DoD_Logon_Text.txt"
@@ -169,10 +144,10 @@ By using this IS (which includes any device attached to this IS), you consent to
 
 -Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants.  Such communications and work product are private and confidential.  See User Agreement for details.
 "@.Trim()
-                Set-ItemProperty -Path $legalNoticeCaptionPath -Name "legalnoticetext" -Value $legalNoticeText -Force
+                #Set-ItemProperty -Path $legalNoticeCaptionPath -Name "legalnoticetext" -Value $legalNoticeText -Force
 
                 
-                Write-Host "Legal Notice Text Property Set"
+                #Write-Host "Legal Notice Text Property Set"
 
                 #Disables Built-in Local Administrator
                 Disable-LocalUser -Name "MSC_MOB"

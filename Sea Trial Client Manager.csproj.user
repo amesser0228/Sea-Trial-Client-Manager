@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <PublishUrlHistory>C:\Sea Trial Client Manager 2.4.3.2\|C:\Sea Trial Client Manager 2.4.2.3\|C:\Sea Trial Client Manager 2.4.1.3\|C:\Sea Trial Client Manager 2.4.1.0\|C:\Sea Trial Client Manager\</PublishUrlHistory>
+    <PublishUrlHistory>C:\Sea Trial Client Manager 2.5.0.0\|C:\Sea Trial Client Manager 2.4.4.0\|C:\Sea Trial Client Manager 2.4.3.9\|C:\Sea Trial Client Manager 2.4.3.8\|C:\Sea Trial Client Manager 2.4.3.7\</PublishUrlHistory>
     <InstallUrlHistory />
     <SupportUrlHistory />
     <UpdateUrlHistory />
@@ -9,6 +9,7 @@
     <ErrorReportUrlHistory />
     <FallbackCulture>en-US</FallbackCulture>
     <VerifyUploadedFiles>false</VerifyUploadedFiles>
+    <ProjectView>ShowAllFiles</ProjectView>
   </PropertyGroup>
   <PropertyGroup>
     <EnableSecurityDebugging>false</EnableSecurityDebugging>

@@ -7,6 +7,21 @@ SYNOPSIS:
     #>
 
 
+param(
+    [string]$CredentialUsernamePath,
+    [string]$CredentialPasswordPath,
+    [string]$BeginDeviceIDPath,
+    [string]$EndDeviceIDPath,
+    [string]$IPPrefixPath
+)
+
+$remoteUsername = Get-Content -Path $CredentialUsernamePath
+$remotePassword = Get-Content -Path $CredentialPasswordPath
+$beginningDeviceID = Get-Content -Path $BeginDeviceIDPath
+$endingDeviceID = Get-Content -Path $EndDeviceIDPath
+$remoteIPPrefix = Get-Content -Path $IPPrefixPath
+
+
 
 # Checks if the script is running as an administrator #
 $isAdmin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")
@@ -27,23 +42,26 @@ Write-Host "
 
 Write-Host "SEND A MESSAGE TO SELECTED CLIENTS`n`n" -ForegroundColor Yellow
 
-
-#MOB
-$mobClients = @()
-for ($i = 201; $i -le 223; $i++) {
-    $mobClients += "192.168.56.$i"
+Write-Host "Remote Username:" -NoNewline
+Write-Host $remoteUsername -ForegroundColor Green
+Write-Host Remote IP range: -NoNewline
+Write-Host $remoteIPPrefix"."$beginningDeviceID "-" $endingDeviceID -ForegroundColor Green
+$runScript = Read-Host "`n`nPress enter to continue or Q to quit"
+if($runScript -eq "Q" -or $runScript -eq "q") {
+    return
+}
+elseif($runScript -eq "") {
+    Write-Host "`n`nRunning script..." -ForegroundColor Green
+}
+else {
+    Write-Host "`nInvalid selection. Press enter to continue or Q/q to quit." -ForegroundColor Yellow
 }
 
-#MAR
-$marClients = @()
-for ($i = 101; $i -le 123; $i++) {
-    $marClients += "192.168.56.$i"
-}
 
-#CVN
-$cvnClients = @()
-for ($i = 101; $i -le 148; $i++) {
-    $cvnClients += "192.168.79.$i"
+#RemoteIPs
+$remoteIPAddresses = @()
+for ($i = [int]$beginningDeviceID; $i -le [int]$endingDeviceID; $i++) {
+    $remoteIPAddresses += "$($remoteIPPrefix).$($i)"
 }
 
 # Load Windows Forms assembly
@@ -134,46 +152,12 @@ $flowLayoutPanel.Dock = [System.Windows.Forms.DockStyle]::Fill
 $flowLayoutPanel.FlowDirection = [System.Windows.Forms.FlowDirection]::TopDown
 $flowLayoutPanel.WrapContents = $false
 
-$data = @(
-    @{ Name = "Mobile"; Value = "1 (56.200)" },
-    @{ Name = "Marinette"; Value = "2 (56.100)" },
-    @{ Name = "CVN"; Value = "3 (79.100)" }
-)
-
-# Create a border and format the table
-$border = "┌────────────┬────────────┐"
-$borderBottom = "└────────────┴────────────┘"
-
-Write-Output $border
-Write-Output "│ Batch      │ Number     │"
-Write-Output $border.Replace("┌", "├").Replace("┐", "┤")
-
-foreach ($item in $data) {
-    Write-Output ("│ {0,-9}  │ {1,-10} │" -f $item.Name, $item.Value)  # Adjusted spacing for Value
-}
-
-Write-Output $borderBottom
-
-$whichBatch = Read-Host "Select batch number"
-
-if ($whichBatch -le 3) {
-
 
 # Provide credentials for hosts
 $securePassword = ConvertTo-SecureString "L-3Communicati0ns!" -AsPlainText -Force
 $lcsCredential = New-Object System.Management.Automation.PSCredential ("LCS", $securePassword)
 $cvnCredential = New-Object System.Management.Automation.PSCredential ("CVN", $securePassword)
 
-#Get batch and credential
-if ($whichBatch -eq 1) {
-        $batch = $mobClients 
-        $credential = $lcsCredential}
-    elseif ($whichBatch -eq 2) {
-        $batch = $marClients
-        $credential = $lcsCredential}
-    elseif ($whichBatch -eq 3) {
-        $batch = $cvnClients
-        $credential = $cvnCredential}
 
 # Add checkboxes to message options form
 $checkBox1 = New-Object System.Windows.Forms.CheckBox
@@ -263,6 +247,10 @@ $messageOptionsSubmitButton.Text = "Submit"
 $messageOptionsSubmitButton.Width = 80
 $messageOptionsSubmitButton.Margin = New-Object System.Windows.Forms.Padding(10,180,10,10)
 
+# Provide credentials for hosts
+$remoteSecurePassword = ConvertTo-SecureString $remotePassword -AsPlainText -Force
+$credential = New-Object System.Management.Automation.PSCredential ($remoteUsername, $remoteSecurePassword)
+
 
 #Point of Entry for script
 $messageOptionsSubmitButton.Add_Click({
@@ -271,7 +259,7 @@ $messageOptionsForm.Close()
 $textboxSubmitButton.Add_click({
 $messageInputForm.Close()
 $userMessage = $textbox.Text
-foreach ($client in $batch) {
+foreach ($client in $remoteIPAddresses) {
         $checkbox = New-Object System.Windows.Forms.CheckBox
         $checkbox.Text = $client
         $checkbox.Width = 200
@@ -457,8 +445,4 @@ foreach ($client in $batch) {
         
     $messageOptionsFlowLayoutPanel.Controls.Add($messageOptionsSubmitButton)
     [void] $messageOptionsForm.ShowDialog()
-    }
-    else {
-    Write-Warning "Your selection was not valid"
-    }
     Read-Host "`nPress any key to exit"

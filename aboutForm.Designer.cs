@@ -63,11 +63,13 @@
             this.label4.AllowDrop = true;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(14, 226);
+            this.label4.Location = new System.Drawing.Point(23, 226);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(334, 114);
+            this.label4.Size = new System.Drawing.Size(316, 171);
             this.label4.TabIndex = 8;
-            this.label4.Text = resources.GetString("label4.Text");
+            this.label4.Text = "WPF application developed for sea trial card client\r\nremote management\r\n\r\nThis ap" +
+    "plication complies with NIST \r\npolicies regarding CUI\r\n\r\nContract No: N0017819D8" +
+    "407\r\n \r\n\r\n";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label5
@@ -97,7 +99,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(126, 185);
+            this.label2.Location = new System.Drawing.Point(136, 185);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 16);
             this.label2.TabIndex = 12;

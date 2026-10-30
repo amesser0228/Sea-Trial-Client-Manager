@@ -19,7 +19,7 @@
     <ForceDesignerDPIUnaware>true</ForceDesignerDPIUnaware>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <PublishUrl>C:\Sea Trial Client Manager 2.4.3.2\</PublishUrl>
+    <PublishUrl>C:\Sea Trial Client Manager 2.5.0.0\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -30,8 +30,8 @@
     <UpdateRequired>true</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <MinimumRequiredVersion>1.3.1.0</MinimumRequiredVersion>
-    <ApplicationRevision>2</ApplicationRevision>
-    <ApplicationVersion>2.4.3.2</ApplicationVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>2.5.0.0</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -79,6 +79,12 @@
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>
     </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -170,6 +176,30 @@
     </Compile>
     <Compile Include="BetaDisclaimerForm.Designer.cs">
       <DependentUpon>BetaDisclaimerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigMenuForm.Designer.cs">
+      <DependentUpon>ConfigMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoteCredentialsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoteCredentialsForm.Designer.cs">
+      <DependentUpon>RemoteCredentialsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoteClientNetworkInformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoteClientNetworkInformationForm.Designer.cs">
+      <DependentUpon>RemoteClientNetworkInformationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserRemoteCredentials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserRemoteCredentials.Designer.cs">
+      <DependentUpon>UserRemoteCredentials.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginHelpForm.cs">
       <SubType>Form</SubType>
@@ -275,6 +305,18 @@
     <EmbeddedResource Include="BetaDisclaimerForm.resx">
       <DependentUpon>BetaDisclaimerForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConfigMenuForm.resx">
+      <DependentUpon>ConfigMenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoteCredentialsForm.resx">
+      <DependentUpon>RemoteCredentialsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoteClientNetworkInformationForm.resx">
+      <DependentUpon>RemoteClientNetworkInformationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserRemoteCredentials.resx">
+      <DependentUpon>UserRemoteCredentials.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginHelpForm.resx">
       <DependentUpon>LoginHelpForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -324,6 +366,21 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Content Include="CredentialFiles\BeginIPDeviceID.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CredentialFiles\EndIPDeviceID.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CredentialFiles\IPPrefix.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CredentialFiles\RemotePassword.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CredentialFiles\RemoteUsername.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="favicon %285%29.ico" />
     <Content Include="favicon %286%29.ico" />
     <Content Include="PowerShellCommands.docx">
@@ -331,6 +388,7 @@
     </Content>
     <None Include=".gitignore" />
     <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -344,6 +402,8 @@
     <Content Include="favicon %284%29.ico" />
     <None Include="Resources\favicon.ico" />
     <None Include="Resources\favicon %281%29.ico" />
+    <None Include="Resources\image_cb1b70b3.jpg" />
+    <None Include="Resources\configMenuIcon.png" />
     <Content Include="Resources\InfoPaperDoDCUIProgram.pdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -384,6 +444,22 @@
     <None Include="Resources\script_Icon.png" />
     <None Include="Resources\STCM-scriptHelp_client_unavailable_example.jpg" />
     <None Include="Resources\notepad-icon.png" />
+    <None Include="Resources\remove_folder.png" />
+    <None Include="Resources\remove_folder_x.png" />
+    <None Include="Resources\remove_folder_big_x.png" />
+    <None Include="Resources\user-login-icon.png" />
+    <None Include="Resources\remoteComputerIcon.png" />
+    <None Include="Resources\versionInformationIcon.png" />
+    <None Include="Resources\loginScreenIcon.png" />
+    <None Include="Resources\userCredentialsIcon.png" />
+    <None Include="Resources\networkInformationIcon.png" />
+    <None Include="Resources\remoteNetworkInformationIcon.png" />
+    <None Include="Resources\revealPasswordIcon.png" />
+    <None Include="Resources\remoteCredentialAccountInfoIcon.png" />
+    <None Include="Resources\setRemoteCredentialAccountInfoIcon.png" />
+    <Content Include="userCredentialAPI.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="VS Scripts\legalLogonNotice.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -414,10 +490,10 @@
     <Content Include="VS Scripts\README.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS Scripts\run_command_remote_host_v2.6.ps1">
+    <Content Include="VS Scripts\run_command_remote_host_v2.8.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS Scripts\run_script_remote_host_v2.5.ps1">
+    <Content Include="VS Scripts\run_script_remote_host_v2.7.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="VS Scripts\enable_Connection_To_Clients.ps1">
@@ -468,7 +544,7 @@
     <Content Include="VS Scripts\nessusScanPrep.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="VS Scripts\setScanPolicies.ps1">
+    <Content Include="VS Scripts\setTrialPolicies.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="VS Scripts\clearEval-STIGOutputFolder.ps1">
@@ -477,7 +553,15 @@
     <Content Include="VS Scripts\removeFolderContents.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="VS Scripts\enable_Connection_To_Clients_Server.ps1" />
+    <Content Include="VS Scripts\changeClientETCTargetDatabase.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VS Scripts\enable_Connection_To_Clients_Server.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VS Scripts\testScript.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -500,6 +584,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

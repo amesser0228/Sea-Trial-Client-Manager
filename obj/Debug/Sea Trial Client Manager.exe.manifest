@@ -1,31 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="Sea Trial Client Manager.exe" version="2.4.3.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="Sea Trial Client Manager.exe" version="2.5.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="favicon (1).ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Sea Trial Client Manager" version="2.4.3.2" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="Sea Trial Client Manager" version="2.5.0.0" language="neutral" processorArchitecture="msil" />
     <commandLine file="Sea Trial Client Manager.exe" parameters="" />
   </entryPoint>
   <trustInfo>
     <security>
       <applicationRequestMinimum>
-        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
         <defaultAssemblyRequest permissionSetReference="Custom" />
       </applicationRequestMinimum>
       <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
-        <!--
-          UAC Manifest Options
-          If you want to change the Windows User Account Control level replace the
-          requestedExecutionLevel node with one of the following.
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
 
         <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
         <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
         <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
 
-         If you want to utilize File and Registry Virtualization for backward
-         compatibility then delete the requestedExecutionLevel node.
-    -->
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
         <requestedExecutionLevel level="asInvoker" uiAccess="false" />
       </requestedPrivileges>
     </security>
@@ -91,14 +91,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Sea Trial Client Manager.exe" size="1859072">
-      <assemblyIdentity name="Sea Trial Client Manager" version="2.4.3.2" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Sea Trial Client Manager.exe" size="2974720">
+      <assemblyIdentity name="Sea Trial Client Manager" version="2.5.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>I9rPC1yUdP2VLrLbZY9PniG6pIHPTfHRx7cy8v/F2+4=</dsig:DigestValue>
+        <dsig:DigestValue>Q1I4ztEBOZl2kTIGPe5qQ/t4WIrY0waZgxpGMX2zobk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -282,49 +282,49 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="favicon (1).ico" size="15086">
+  <file name="CredentialFiles\BeginIPDeviceID.txt" size="3">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>8zqemx8kzZCK5cPOf+7VwmBNQi251GiJENyEF+XTjdw=</dsig:DigestValue>
+      <dsig:DigestValue>Q5dO10BmsgfDD/0P7VFGdi5sYHRayXcAS8FFB8fEK1A=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="favicon (4).ico" size="15086">
+  <file name="CredentialFiles\EndIPDeviceID.txt" size="3">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>R/DEJJZqnohH64xVU7rANdcb6Y3hRDQmaADffVrntU4=</dsig:DigestValue>
+      <dsig:DigestValue>VvTaJu2VZzAwn6FIhhHuDxOwrJXrsbybXSEOMf9w55w=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="favicon (5).ico" size="15086">
+  <file name="CredentialFiles\IPPrefix.txt" size="10">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>bjatK+2FbIVz6ncLJV2/dmefKYiF5O+lNL+zyu3RSAg=</dsig:DigestValue>
+      <dsig:DigestValue>JpNuL54CsTaXddY3U7+IO5yMZ5Z496zocM7EXMnONPw=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="favicon (6).ico" size="15086">
+  <file name="CredentialFiles\RemotePassword.txt" size="18">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>4AW3ooX1kOOEdtjSdXHalYe+5ONRgDC2vpmUJcAhRH4=</dsig:DigestValue>
+      <dsig:DigestValue>uXb8Vm4gnfGnNsk19df86YWaK0yYgl4QdjYRrn6qK40=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="favicon.ico" size="32038">
+  <file name="CredentialFiles\RemoteUsername.txt" size="3">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>maWHhwtEiyMaXM3ZKfwVicknDCm3DCacAWp/+qe+bcM=</dsig:DigestValue>
+      <dsig:DigestValue>JwKKFGkzz3u9xaSGiJCKFR7CWVZCskN0rO/bC7X5YIM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="PowerShellCommands.docx" size="53230">
@@ -345,31 +345,94 @@
       <dsig:DigestValue>dabDh9tHZ3/E2PaEt2KBDlFEyeumfqmQpCjT26aOBhs=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Sea Trial Client Manager.exe.config" size="3958">
+  <file name="Sea Trial Client Manager.exe.config" size="4074">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>QqYPpQJQUU5b5U4kodOzc/Vipu/WJJvTqtRssNBrWOA=</dsig:DigestValue>
+      <dsig:DigestValue>BfL07boCMwmmT3fj8AsOUk7fyz0gMOWAOx34tUnLHMk=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="VS Scripts\addNetworkPrinter.ps1" size="8755">
+  <file name="VS Scripts\PMS501-CACI_CKL_COPIER_Evaluate-STIG.ps1" size="1521">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>OMuyPMRzxyvReZStMqtg+abyRnxbnOyzmGL83t3znxw=</dsig:DigestValue>
+      <dsig:DigestValue>jy8EnPZGEHlmOxIZ8pQlEyg8XQeBxY3B9ZIhWUjtu/A=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="VS Scripts\checkClientStatus.ps1" size="5069">
+  <file name="VS Scripts\PMS501-CACI_CKL_EDITOR.ps1" size="132408">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>6vISyjWBHnwGnec630l75ZOmlmSmFMCegUtirWFmJMk=</dsig:DigestValue>
+      <dsig:DigestValue>o15aPFFDBxUKJsujkjdNp2k0rZmn4Acjr47JWhZoybg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="VS Scripts\PMS501_BaselineImage_Configuration.ps1" size="10312">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>teJgmtS7E1agEUBfyKLdhNh0qiyIn2gky3wAvm2ICK8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="VS Scripts\PMS501_Disk_Encryption.ps1" size="2824">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SiDNebYlureJblmyyVlBXZlOIzeoXyU3xadPJrzbaLs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="VS Scripts\PMS501_TrialsImage_Configuration.ps1" size="29531">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>X8P/xhVRlSRBlWkcgpmi62cHgrE3SH4WHWZ4wvDzQ1U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="VS Scripts\README.txt" size="620">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9QoKuo3JBQ4tXUgYZZkQFHCMWiwUM/Lb+T6SDZtokZA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="VS Scripts\addNetworkPrinter.ps1" size="9015">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yYOOFK6rEx/ZBp630Ir/v19EknhQQz2bqkEoMJgsUEE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="VS Scripts\changeClientETCTargetDatabase.ps1" size="7448">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZrJ5CQy9MevDDo2YfaDrAb8UAxNXyLgCm6OwSk8rYYg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="VS Scripts\checkClientStatus.ps1" size="4026">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gHx68EgBlEpAxYRabe0l+0BOYkKWuvKfAuqw6KgjZMw=</dsig:DigestValue>
     </hash>
   </file>
   <file name="VS Scripts\clearEval-STIGOutputFolder.ps1" size="6699">
@@ -390,22 +453,22 @@
       <dsig:DigestValue>tjct9bwcq7imJyMHc/xwWufc/HJSnGC8o4XrU9E0ClE=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="VS Scripts\copyFolderToClients.ps1" size="6243">
+  <file name="VS Scripts\copyFolderToClients.ps1" size="6042">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>qHmLqcsB8WYQR/hLOETzLOMOyLvvwBen5SoQ92V24D4=</dsig:DigestValue>
+      <dsig:DigestValue>9cEaw93c6CWunsS2/oiw89D0xcjp9YG3HdV4YJefRFM=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="VS Scripts\copyItemToClient.ps1" size="7218">
+  <file name="VS Scripts\copyItemToClient.ps1" size="7151">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>YCxmxCgRvZM03zN/PRM/9hqrHl+VNL+8Gmm9NS3O2Tc=</dsig:DigestValue>
+      <dsig:DigestValue>pnWijO4DSZqOk/qI6hOpUsg0ftqcWAEGN95btoMWXEU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="VS Scripts\createClientSystemReport.ps1" size="25614">
@@ -417,22 +480,31 @@
       <dsig:DigestValue>mVjabWgsaJTR2lac9ZAnTWdwaW0ZtZmGlGb4M3cTPnA=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="VS Scripts\enable_Connection_To_Clients.ps1" size="2050">
+  <file name="VS Scripts\e-s_Ckl_Edit.ps1" size="2524">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>E40NgG1ytiIRhfOpi7e6XfJ1Xg/UmwQeJ+yynkSoHNE=</dsig:DigestValue>
+      <dsig:DigestValue>d8sBpl7RcrSnpR2se5LSms3s+ihv60mHOM5LavQfGOg=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="VS Scripts\e-s_Ckl_Edit.ps1" size="2517">
+  <file name="VS Scripts\enable_Connection_To_Clients.ps1" size="1992">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>QViKPkuxFm7g9FC2ZyNNl0Jj6Zv8XBmX480vgYrlQAw=</dsig:DigestValue>
+      <dsig:DigestValue>fK/W2rX5cqlQf3zcyEmPQ6ONQWU1Rtoa0k3w6rA5WGY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="VS Scripts\enable_Connection_To_Clients_Server.ps1" size="2027">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wIWJ0W1wvsdMmE/JwjPCRE6HlAeYh4TUSfU6+13EGQs=</dsig:DigestValue>
     </hash>
   </file>
   <file name="VS Scripts\eval-STIGScanPrep.ps1" size="16444">
@@ -480,67 +552,13 @@
       <dsig:DigestValue>H139YoZ2PwnAodA/i4/+qhdbzpeO+nHcQmr1Av3G7vg=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="VS Scripts\PMS501_BaselineImage_Configuration.ps1" size="10312">
+  <file name="VS Scripts\powerOffHosts.ps1" size="6816">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>teJgmtS7E1agEUBfyKLdhNh0qiyIn2gky3wAvm2ICK8=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="VS Scripts\PMS501_Disk_Encryption.ps1" size="2738">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>MJUuY8X+46pBvaSLf2d+9BmyjGmubIcx4gEnA7XtcbE=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="VS Scripts\PMS501_TrialsImage_Configuration.ps1" size="29531">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>X8P/xhVRlSRBlWkcgpmi62cHgrE3SH4WHWZ4wvDzQ1U=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="VS Scripts\PMS501-CACI_CKL_COPIER_Evaluate-STIG.ps1" size="1521">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>jy8EnPZGEHlmOxIZ8pQlEyg8XQeBxY3B9ZIhWUjtu/A=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="VS Scripts\PMS501-CACI_CKL_EDITOR.ps1" size="132408">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>o15aPFFDBxUKJsujkjdNp2k0rZmn4Acjr47JWhZoybg=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="VS Scripts\powerOffHosts.ps1" size="6333">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>VmHbX+B0PYO9g/UOOk7RwyShY/b2wLToSX/Slc+i1X4=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="VS Scripts\README.txt" size="620">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>9QoKuo3JBQ4tXUgYZZkQFHCMWiwUM/Lb+T6SDZtokZA=</dsig:DigestValue>
+      <dsig:DigestValue>rOaAZEckrzaQKCPHyocerJyGH1GsYNX+vhguhsUv4Xs=</dsig:DigestValue>
     </hash>
   </file>
   <file name="VS Scripts\removeFolderContents.ps1" size="7307">
@@ -561,22 +579,22 @@
       <dsig:DigestValue>1cFK5ws6iU9z5mx8DFzZbyP3UKXUSi8WXQaZQibmqNE=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="VS Scripts\run_command_remote_host_v2.6.ps1" size="66584">
+  <file name="VS Scripts\run_command_remote_host_v2.8.ps1" size="98016">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>0D28MDV3Est4gch6+IaVFXSMhTdRF2+6623jug8RE5Y=</dsig:DigestValue>
+      <dsig:DigestValue>11RPNpyFBGmN6GaUzrp+uUSXBpBQ9KuPNob/cuJpZ2A=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="VS Scripts\run_script_remote_host_v2.5.ps1" size="12599">
+  <file name="VS Scripts\run_script_remote_host_v2.7.ps1" size="13703">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>v0E7kGd/OUoNu9byqTkRY9tMGfbsrbztgfIJFCmJW28=</dsig:DigestValue>
+      <dsig:DigestValue>6TEnPxTcCvy3zMDhnOwcGhMHqND5yFuoTykxmW8WayQ=</dsig:DigestValue>
     </hash>
   </file>
   <file name="VS Scripts\save_VS_Script_ToLocalMachine.ps1" size="1106">
@@ -588,40 +606,49 @@
       <dsig:DigestValue>E/tpcsCkGq1E8f4X0JpwaSqak2Jg1vC8xKZbZMvC7lI=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="VS Scripts\sendNetMessageToClients.ps1" size="18261">
+  <file name="VS Scripts\sendNetMessageToClients.ps1" size="18209">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>sFAP3l5+y2glF9V1WVe2nmCPt6igJ9cQCQDaPGbzohc=</dsig:DigestValue>
+      <dsig:DigestValue>aH5ci3HD9fVTOqziXKxxn1+WCGakdJPZaglaldgh1lE=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="VS Scripts\set_Prod_Policies_On_Windows.ps1" size="23585">
+  <file name="VS Scripts\setNISTPolicies.ps1" size="18350">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>6pajZXal072k0XKovc1smkDXCY/f28tuy+hQVjLAt8k=</dsig:DigestValue>
+      <dsig:DigestValue>G01wr0XvetL+rmL7CG5LvzxNxVHI50/HCP1U/kMskqI=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="VS Scripts\setNISTPolicies.ps1" size="18616">
+  <file name="VS Scripts\setTrialPolicies.ps1" size="9618">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>1JqK8mc9Ir0PsSHEkHAUMp74vYHJidRUyWzug1OkHuk=</dsig:DigestValue>
+      <dsig:DigestValue>YMIbwiISQTt3YpgnuMy7q45bajDcrbYhXXL08CVGVqM=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="VS Scripts\setScanPolicies.ps1" size="9618">
+  <file name="VS Scripts\set_Prod_Policies_On_Windows.ps1" size="23433">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>0+buGwBQbc2ln0KUKTJ2n3g82GJtqQ/jPdJbuxBOZKk=</dsig:DigestValue>
+      <dsig:DigestValue>e3Ah00H9DzvDAd7p/+m7/up47Bk2nK4xtEMqQ/ayHcU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="VS Scripts\testScript.ps1" size="512">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>A8bgQk1OZPS+UEo+P6FZK2CkGQ1wbdKJhPmBRm/mqUQ=</dsig:DigestValue>
     </hash>
   </file>
   <file name="VS Scripts\troubleshootConnectionIssues.ps1" size="5082">
@@ -633,4 +660,75 @@
       <dsig:DigestValue>kHQKxHFkklNLdDZiMQEk/Bzxp6vsQddEfmqKGkONYsI=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="favicon (1).ico" size="15086">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8zqemx8kzZCK5cPOf+7VwmBNQi251GiJENyEF+XTjdw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="favicon (4).ico" size="15086">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R/DEJJZqnohH64xVU7rANdcb6Y3hRDQmaADffVrntU4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="favicon (5).ico" size="15086">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bjatK+2FbIVz6ncLJV2/dmefKYiF5O+lNL+zyu3RSAg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="favicon (6).ico" size="15086">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4AW3ooX1kOOEdtjSdXHalYe+5ONRgDC2vpmUJcAhRH4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="favicon.ico" size="32038">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>maWHhwtEiyMaXM3ZKfwVicknDCm3DCacAWp/+qe+bcM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="userCredentialAPI.txt" size="691">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>l1svJBr0dSMm14Kxs0tlCdr2cbaGr2/BCkKCGzV2CWM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on
+           and is designed to work with. Uncomment the appropriate elements
+           and Windows will automatically select the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
 </asmv1:assembly>

@@ -9,8 +9,6 @@ SYNOPSIS:
 #PREVENT WINDOWS SCRIPTS FROM RUNNING ON SERVER
 $OS_Name = Get-WmiObject -Class Win32_OperatingSystem | Select-Object -ExpandProperty Caption
 
-if ($OS_Name -notlike '*Windows Server*') {
-
 # Checks if the script is running as an administrator #
 $isAdmin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")
 
@@ -34,7 +32,7 @@ Write-Host "
 #ENABLE PSREMOTING ON HOST
 Enable-PSRemoting -SKIPNETWORKPROFILECHECK -Force
 if($?) {
-Write-Host "PSRemoting service has been started on $ENV:COMPUTERNAME"
+Write-Host "PSRemoting service has been started on $ENV:COMPUTERNAME`n **This script only needs to be run once on this machine per batch**"
 }
 start-Sleep 1
 
@@ -65,7 +63,3 @@ Write-Host "Complete" -foregroundcolor green
 start-sleep -seconds 2
 
 #Get-Help about_Remote_Troubleshooting
-}
-else {
-Write-Warning 'Cannot run this script version on Windows server.'
-}

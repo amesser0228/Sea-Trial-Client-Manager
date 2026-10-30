@@ -19,6 +19,7 @@ using System.Net;
 using System.Drawing.Text;
 using System.Management;
 using System.Runtime.CompilerServices;
+using System.Diagnostics.Eventing.Reader;
 
 namespace Sea_Trials_Script_Launcher
 {
@@ -31,11 +32,13 @@ namespace Sea_Trials_Script_Launcher
         public string OSCaption;
         public string STCM_NotesFilePath;
         public string Trial_HullInfoFilePath;
+        public Version appVersion;
 
         public HomeForm()
         {
             InitializeComponent();
-            SetVersionNumber();
+            //SetVersionNumber();
+            SetFormTitleVersion();
             CopyScriptsToUserDirectory();
             GenerateSessionId();
             database = new SeaTrialsDatabase("SeaTrials.db");
@@ -50,7 +53,7 @@ namespace Sea_Trials_Script_Launcher
             //tool tip text for script buttons
             toolTipHelper.SetToolTip(Remote_Command_Btn, "This script allows you to remotely send a command to all clients in the chosen batch.\n*This script can be edited*");
 
-            toolTipHelper.SetToolTip(button3, "Enables connection to clinets through PSRemote and Trusted Hosts.");
+            toolTipHelper.SetToolTip(button3, "Enables connection to clinets through PSRemote and Trusted Hosts. *THIS ONLY NEEDS TO BE RUN ONCE");
 
             toolTipHelper.SetToolTip(button1, "This script allows you to select and power down all clients on the network.\n*This script can be edited*");
 
@@ -72,14 +75,29 @@ namespace Sea_Trials_Script_Launcher
 
             toolTipHelper.SetToolTip(Remote_Script_Btn, "This script allows you to run a client-side script on all clients in the selected batch.");
 
+            toolTipHelper.SetToolTip(OSNameLabel, "This is the operating system currently running on this computer.");
+
             openScriptsDirectoryToolStripMenuItem.ToolTipText = "WARNING! Modifying scripts in this folder can break this application.";
 
+
+            toolsToolStripMenuItem.ToolTipText = "help";
+
             OSCaption = GetOSCaption();
-
-            
-
-
         }
+        private void SetFormTitleVersion()
+        {
+            string versionString = GetTitleVersionNumber();
+            this.Text = $"Sea Trial Client Manager {versionString} - (CUI) PMS 501/378";
+        }
+
+        // Set version number in form title
+        private string GetTitleVersionNumber()
+        {
+            appVersion = Assembly.GetExecutingAssembly().GetName().Version;
+            return $"v.{appVersion}";
+        }
+
+        
 
         public void checkAndCreateNotesFiles()
         {
@@ -105,7 +123,7 @@ namespace Sea_Trials_Script_Launcher
                 }
                 //MessageBox.Show(OSCaption);
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 MessageBox.Show("Error retrieving OS caption " + ex.Message);
             }
@@ -123,7 +141,7 @@ namespace Sea_Trials_Script_Launcher
                 OSNameLabel.Text = "Server";
             }
             else
-            { 
+            {
                 OSNameLabel.Text = "UNAVAILABLE";
             }
         }
@@ -158,11 +176,17 @@ namespace Sea_Trials_Script_Launcher
         //main form load method
         private void Form1_Load(object sender, EventArgs e)
         {
-            using (loginForm loginFormWindow = new loginForm())
+
+            dontShowLoginScreenToolStripMenuItem.Checked = Properties.Settings.Default.ShowLoginScreenSetting;
+
+            if (!Properties.Settings.Default.ShowLoginScreenSetting)
             {
-                if (loginFormWindow.ShowDialog() != DialogResult.OK)
+                using (loginForm loginFormWindow = new loginForm())
                 {
-                    this.Close(); // Close the main form if login fails
+                    if (loginFormWindow.ShowDialog() != DialogResult.OK)
+                    {
+                        this.Close(); // Close the main form if login fails
+                    }
                 }
             }
 
@@ -177,7 +201,50 @@ namespace Sea_Trials_Script_Launcher
 
             CopyScriptsToUserDirectory();
             ApplyMachineType();
+
+            string osType = GetOperatingSystemType();
+
+            if (osType == "Server")
+            {
+                OSNameLabel.Text = "SERVER OS";
+            }
+            else if (osType == "Client")
+            {
+                OSNameLabel.Text = "WINDOWS OS";
+            }
+            else
+            {
+                OSNameLabel.Text = "Unknown OS";
+            }
+
         }
+
+        private string GetOperatingSystemType()
+        {
+            try
+            {
+                using (ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT Caption FROM Win32_OperatingSystem"))
+                {
+                    foreach (ManagementObject os in searcher.Get())
+                    {
+                        string caption = os["Caption"].ToString();
+                        if (caption.Contains("Server"))
+                        {
+                            return "Server";
+                        }
+                        else
+                        {
+                            return "Client";
+                        }
+                    }
+                }
+                return "Unknown";
+            }
+            catch
+            {
+                return "Unknown";
+            }
+}
 
 
         //Helper method for editable PS scripts
@@ -185,11 +252,27 @@ namespace Sea_Trials_Script_Launcher
         {
             string folderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "VS_Scripts");
             string scriptPath = Path.Combine(folderPath, scriptName);
+            string remoteUserCredentialFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"CredentialFiles\RemoteUsername.txt");
+            string remotePasswordCredentialFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"CredentialFiles\RemotePassword.txt");
+            string remoteCredentialBeginDeviceIDFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"CredentialFiles\BeginIPDeviceID.txt");
+            string remoteCredentialEndDeviceIDFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"CredentialFiles\EndIPDeviceID.txt");
+            string remoteCredentialIPPrefixFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"CredentialFiles\IPPrefix.txt");
+            string remoteUserCredentialAPI = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "userCredentialAPI.txt");
 
             ProcessStartInfo startInfo = new ProcessStartInfo();
             startInfo.FileName = "powershell.exe";
-            startInfo.Arguments = $"-ExecutionPolicy Bypass -File \"{scriptPath}\"";
+            startInfo.Arguments = $"-ExecutionPolicy Bypass -NoExit -File \"{scriptPath}\" " +
+                    $"-CredentialUsernamePath \"{remoteUserCredentialFilePath}\" " +
+                    $"-CredentialPasswordPath \"{remotePasswordCredentialFilePath}\" " +
+                    $"-BeginDeviceIDPath \"{remoteCredentialBeginDeviceIDFilePath}\" " +
+                    $"-EndDeviceIDPath \"{remoteCredentialEndDeviceIDFilePath}\" " +
+                    $"-IPPrefixPath \"{remoteCredentialIPPrefixFilePath}\" " +
+                    $"-UserCredentialAPIPath \"{remoteUserCredentialAPI}\" ";
+                      
             startInfo.Verb = "runas"; // Run as admin console
+            startInfo.UseShellExecute = true;
+            //startInfo.RedirectStandardError = true; // Helps you debug if it crashes
+            startInfo.CreateNoWindow = false;
 
             Process process = new Process();
             process.StartInfo = startInfo;
@@ -197,13 +280,46 @@ namespace Sea_Trials_Script_Launcher
             // Execute the script from the user-accessible directory
         }
 
-        private void SetVersionNumber()
+        //Helper method for editable PS scripts
+        private void RunScriptNonAdmin(string scriptName)
         {
-            Version version = Assembly.GetExecutingAssembly().GetName().Version;
-            label7.Text = $"Version {version}";
+            string folderPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "VS_Scripts");
+            string scriptPath = Path.Combine(folderPath, scriptName);
+            string remoteUserCredentialFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"CredentialFiles\RemoteUsername.txt");
+            string remotePasswordCredentialFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"CredentialFiles\RemotePassword.txt");
+            string remoteCredentialBeginDeviceIDFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"CredentialFiles\BeginIPDeviceID.txt");
+            string remoteCredentialEndDeviceIDFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"CredentialFiles\EndIPDeviceID.txt");
+            string remoteCredentialIPPrefixFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"CredentialFiles\IPPrefix.txt");
+            string remoteUserCredentialAPI = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "userCredentialAPI.txt");
+
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            startInfo.FileName = "powershell.exe";
+            startInfo.Arguments = $"-ExecutionPolicy Bypass -NoExit -File \"{scriptPath}\" " +
+                    $"-CredentialUsernamePath \"{remoteUserCredentialFilePath}\" " +
+                    $"-CredentialPasswordPath \"{remotePasswordCredentialFilePath}\" " +
+                    $"-BeginDeviceIDPath \"{remoteCredentialBeginDeviceIDFilePath}\" " +
+                    $"-EndDeviceIDPath \"{remoteCredentialEndDeviceIDFilePath}\" " +
+                    $"-IPPrefixPath \"{remoteCredentialIPPrefixFilePath}\" " +
+                    $"-UserCredentialAPIPath \"{remoteUserCredentialAPI}\" ";
+
+            //startInfo.Verb = "runas"; // Run as admin console
+            startInfo.UseShellExecute = true;
+            //startInfo.RedirectStandardError = true; // Helps you debug if it crashes
+            startInfo.CreateNoWindow = false;
+
+            Process process = new Process();
+            process.StartInfo = startInfo;
+            process.Start();
+            // Execute the script from the user-accessible directory
         }
 
-        
+        //private void SetVersionNumber()
+        //{
+        //    Version version = Assembly.GetExecutingAssembly().GetName().Version;
+        //    label7.Text = $"Version {version}";
+        //}
+
+
 
         ////////// BUTTON EVENT HANDLERS //////////
 
@@ -250,12 +366,12 @@ namespace Sea_Trials_Script_Launcher
 
         private void button3_Click(object sender, EventArgs e)
         {
-            RunScript("run_script_remote_host_v2.5.ps1");
+            RunScript("run_script_remote_host_v2.7.ps1");
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            RunScript("run_command_remote_host_v2.6.ps1");
+            RunScript("run_command_remote_host_v2.8.ps1");
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -266,14 +382,7 @@ namespace Sea_Trials_Script_Launcher
         private void button3_Click_1(object sender, EventArgs e)
         {
             string fileName;
-            if (OSCaption.Contains("Windows Server"))
-            {
-                fileName = "enable_Connection_To_Clients_Server.ps1";
-            }
-            else
-            {
-                fileName = "enable_Connection_To_Clients.ps1";
-            }
+            fileName = "enable_Connection_To_Clients.ps1";
             string folderPath = @"VS Scripts\";
             string filePath = Path.Combine(Environment.CurrentDirectory, folderPath, fileName);
 
@@ -303,37 +412,37 @@ namespace Sea_Trials_Script_Launcher
         }
 
 
-        private void button4_Click_1(object sender, EventArgs e)
-        {
-            string fileName = "createClientSystemReport.ps1";
-            string folderPath = @"VS Scripts\";
-            string filePath = Path.Combine(Environment.CurrentDirectory, folderPath, fileName);
+        //private void button4_Click_1(object sender, EventArgs e)
+        //{
+        //    string fileName = "createClientSystemReport.ps1";
+        //    string folderPath = @"VS Scripts\";
+        //    string filePath = Path.Combine(Environment.CurrentDirectory, folderPath, fileName);
 
-            ProcessStartInfo startInfo = new ProcessStartInfo();
-            startInfo.FileName = "powershell.exe";
-            startInfo.Arguments = $"-ExecutionPolicy Bypass -File \"{filePath}\"";
-            startInfo.Verb = "runas"; // Run as admin console
+        //    ProcessStartInfo startInfo = new ProcessStartInfo();
+        //    startInfo.FileName = "powershell.exe";
+        //    startInfo.Arguments = $"-ExecutionPolicy Bypass -File \"{filePath}\"";
+        //    startInfo.Verb = "runas"; // Run as admin console
 
-            Process process = new Process();
-            process.StartInfo = startInfo;
-            process.Start();
-        }
+        //    Process process = new Process();
+        //    process.StartInfo = startInfo;
+        //    process.Start();
+        //}
 
-        private void restartAllClientsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            string fileName = "restart_all_clients.ps1";
-            string folderPath = @"VS Scripts\";
-            string filePath = Path.Combine(Environment.CurrentDirectory, folderPath, fileName);
+        //private void restartAllClientsToolStripMenuItem_Click(object sender, EventArgs e)
+        //{
+        //    string fileName = "restart_all_clients.ps1";
+        //    string folderPath = @"VS Scripts\";
+        //    string filePath = Path.Combine(Environment.CurrentDirectory, folderPath, fileName);
 
-            ProcessStartInfo startInfo = new ProcessStartInfo();
-            startInfo.FileName = "powershell.exe";
-            startInfo.Arguments = $"-ExecutionPolicy Bypass -File \"{filePath}\"";
-            startInfo.Verb = "runas"; // Run as admin console
+        //    ProcessStartInfo startInfo = new ProcessStartInfo();
+        //    startInfo.FileName = "powershell.exe";
+        //    startInfo.Arguments = $"-ExecutionPolicy Bypass -File \"{filePath}\"";
+        //    startInfo.Verb = "runas"; // Run as admin console
 
-            Process process = new Process();
-            process.StartInfo = startInfo;
-            process.Start();
-        }
+        //    Process process = new Process();
+        //    process.StartInfo = startInfo;
+        //    process.Start();
+        //}
 
         private void generalInformationToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -374,18 +483,7 @@ namespace Sea_Trials_Script_Launcher
 
         private void setProdPoliciesOnClientsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string fileName = "set_Prod_Policies_On_Windows.ps1";
-            string folderPath = @"VS Scripts\";
-            string filePath = Path.Combine(Environment.CurrentDirectory, folderPath, fileName);
-
-            ProcessStartInfo startInfo = new ProcessStartInfo();
-            startInfo.FileName = "powershell.exe";
-            startInfo.Arguments = $"-ExecutionPolicy Bypass -File \"{filePath}\"";
-            startInfo.Verb = "runas"; // Run as admin console
-
-            Process process = new Process();
-            process.StartInfo = startInfo;
-            process.Start();
+            RunScript("set_Prod_Policies_On_Windows.ps1");
         }
 
         private void addNetworkmToolStripMenuItem_Click(object sender, EventArgs e)
@@ -448,18 +546,7 @@ namespace Sea_Trials_Script_Launcher
 
         private void button5_Click(object sender, EventArgs e)
         {
-            string fileName = "checkClientStatus.ps1";
-            string folderPath = @"VS Scripts\";
-            string filePath = Path.Combine(Environment.CurrentDirectory, folderPath, fileName);
-
-            ProcessStartInfo startInfo = new ProcessStartInfo();
-            startInfo.FileName = "powershell.exe";
-            startInfo.Arguments = $"-ExecutionPolicy Bypass -File \"{filePath}\"";
-            startInfo.Verb = "runas"; // Run as admin console
-
-            Process process = new Process();
-            process.StartInfo = startInfo;
-            process.Start();
+            RunScript("checkClientStatus.ps1");
         }
 
         private void button7_Click_1(object sender, EventArgs e)
@@ -476,51 +563,29 @@ namespace Sea_Trials_Script_Launcher
 
         private void button12_Click(object sender, EventArgs e)
         {
-            string fileName = "set_Prod_Policies_On_Windows.ps1";
-            string folderPath = @"VS Scripts\";
-            string filePath = Path.Combine(Environment.CurrentDirectory, folderPath, fileName);
-
-            ProcessStartInfo startInfo = new ProcessStartInfo();
-            startInfo.FileName = "powershell.exe";
-            startInfo.Arguments = $"-ExecutionPolicy Bypass -File \"{filePath}\"";
-            startInfo.Verb = "runas"; // Run as admin console
-
-            Process process = new Process();
-            process.StartInfo = startInfo;
-            process.Start();
+            RunScript("set_Prod_Policies_On_Windows.ps1");
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            string fileName = "setNISTPolicies.ps1";
-            string folderPath = @"VS Scripts\";
-            string filePath = Path.Combine(Environment.CurrentDirectory, folderPath, fileName);
-
-            ProcessStartInfo startInfo = new ProcessStartInfo();
-            startInfo.FileName = "powershell.exe";
-            startInfo.Arguments = $"-ExecutionPolicy Bypass -File \"{filePath}\"";
-            startInfo.Verb = "runas"; // Run as admin console
-
-            Process process = new Process();
-            process.StartInfo = startInfo;
-            process.Start();
+            RunScript("setNISTPolicies.ps1");
         }
 
-        private void enableAutoAdminLogonToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            string fileName = "enableAutoAdminLogon.ps1";
-            string folderPath = @"VS Scripts\";
-            string filePath = Path.Combine(Environment.CurrentDirectory, folderPath, fileName);
+        //private void enableAutoAdminLogonToolStripMenuItem_Click(object sender, EventArgs e)
+        //{
+        //    string fileName = "enableAutoAdminLogon.ps1";
+        //    string folderPath = @"VS Scripts\";
+        //    string filePath = Path.Combine(Environment.CurrentDirectory, folderPath, fileName);
 
-            ProcessStartInfo startInfo = new ProcessStartInfo();
-            startInfo.FileName = "powershell.exe";
-            startInfo.Arguments = $"-ExecutionPolicy Bypass -File \"{filePath}\"";
-            startInfo.Verb = "runas"; // Run as admin console
+        //    ProcessStartInfo startInfo = new ProcessStartInfo();
+        //    startInfo.FileName = "powershell.exe";
+        //    startInfo.Arguments = $"-ExecutionPolicy Bypass -File \"{filePath}\"";
+        //    startInfo.Verb = "runas"; // Run as admin console
 
-            Process process = new Process();
-            process.StartInfo = startInfo;
-            process.Start();
-        }
+        //    Process process = new Process();
+        //    process.StartInfo = startInfo;
+        //    process.Start();
+        //}
 
         private void copyAllScriptsToLocalMachineToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -587,55 +652,17 @@ namespace Sea_Trials_Script_Launcher
 
         private void button18_Click(object sender, EventArgs e)
         {
-            string fileName = "copyItemToClient.ps1";
-            string folderPath = @"VS Scripts\";
-            string filePath = Path.Combine(Environment.CurrentDirectory, folderPath, fileName);
-
-            ProcessStartInfo startInfo = new ProcessStartInfo();
-            startInfo.FileName = "powershell.exe";
-            startInfo.Arguments = $"-ExecutionPolicy Bypass -File \"{filePath}\"";
-            startInfo.Verb = "runas"; // Run as admin console
-
-            Process process = new Process();
-            process.StartInfo = startInfo;
-            process.Start();
+            RunScriptNonAdmin("copyItemToClient.ps1");
         }
 
         private void copyFolderToClients_Click(object sender, EventArgs e)
         {
-            string fileName = "copyFolderToClients.ps1";
-            string folderPath = @"VS Scripts\";
-            string filePath = Path.Combine(Environment.CurrentDirectory, folderPath, fileName);
-
-            ProcessStartInfo startInfo = new ProcessStartInfo();
-            startInfo.FileName = "powershell.exe";
-            startInfo.Arguments = $"-ExecutionPolicy Bypass -File \"{filePath}\"";
-            startInfo.Verb = "runas"; // Run as admin console
-
-            Process process = new Process();
-            process.StartInfo = startInfo;
-            process.Start();
+            RunScriptNonAdmin("copyFolderToClients.ps1");
         }
 
         private void removeItemBtn_Click(object sender, EventArgs e)
         {
             string fileName = "removeItemFromClient.ps1";
-            string folderPath = @"VS Scripts\";
-            string filePath = Path.Combine(Environment.CurrentDirectory, folderPath, fileName);
-
-            ProcessStartInfo startInfo = new ProcessStartInfo();
-            startInfo.FileName = "powershell.exe";
-            startInfo.Arguments = $"-ExecutionPolicy Bypass -File \"{filePath}\"";
-            startInfo.Verb = "runas"; // Run as admin console
-
-            Process process = new Process();
-            process.StartInfo = startInfo;
-            process.Start();
-        }
-
-        private void sendMsgToClientsBtn_Click(object sender, EventArgs e)
-        {
-            string fileName = "sendNetMessageToClients.ps1";
             string folderPath = @"VS Scripts\";
             string filePath = Path.Combine(Environment.CurrentDirectory, folderPath, fileName);
 
@@ -778,7 +805,7 @@ namespace Sea_Trials_Script_Launcher
                 }
             }
 
-            MessageBox.Show("Hostname: " + hostname + "\n\nLAN IP address: " + activeIP + "\n\nSession ID: " + sessionID, "Host Information");
+            MessageBox.Show("Hostname: " + hostname + "\n\nLAN IP address: " + activeIP + "\n\nSession ID: " + sessionID + " (Not Needed)", "Host Information");
         }
 
         private void button24_Click(object sender, EventArgs e)
@@ -799,7 +826,7 @@ namespace Sea_Trials_Script_Launcher
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             string password = "   ";
-            string input = Microsoft.VisualBasic.Interaction.InputBox("Secret", "Password Required", "");
+            string input = Microsoft.VisualBasic.Interaction.InputBox("Open VS Scripts local directory", "Password Required", "");
 
             if (input == password)
             {
@@ -816,13 +843,25 @@ namespace Sea_Trials_Script_Launcher
             }
             else
             {
-                MessageBox.Show("Incorrect password. Access denied.");
+               
             }
         }
 
         private void LockBtn_Click(object sender, EventArgs e)
         {
-            Application.Restart();
+            this.Hide();
+
+            loginForm loginFormWindow = new loginForm();
+            if (loginFormWindow.ShowDialog() == DialogResult.OK)
+            {
+                this.Show(); // Show the main form if login is successful
+            }
+            else
+            {
+                this.Close(); // Close the main form if login fails
+            }
+            loginFormWindow.Dispose();
+
         }
 
         private void enterTrialAndHullInfoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -870,42 +909,42 @@ namespace Sea_Trials_Script_Launcher
 
         //}
 
-        private void toolsToolStripMenuItem_MouseHover(object sender, EventArgs e)
-        {
-            menuItemsToolTip.ToolTipTitle = "Options Menu Info";
-            menuItemsToolTip.IsBalloon = true;
+        //private void toolsToolStripMenuItem_MouseHover(object sender, EventArgs e)
+        //{
+        //    menuItemsToolTip.ToolTipTitle = "Options Menu Info";
+        //    menuItemsToolTip.IsBalloon = true;
 
-            ToolStripMenuItem menuItem = (ToolStripMenuItem)sender;
+        //    ToolStripMenuItem menuItem = (ToolStripMenuItem)sender;
 
-            ToolStripDropDown parent = menuItem.DropDown;
+        //    ToolStripDropDown parent = menuItem.DropDown;
 
-            Point position = parent.PointToScreen(menuItem.Bounds.Location);
-            menuItemsToolTip.Show("More remote scripts, Prep for scans, Closeout checklist, Edit PowerShell scripts, Trial notes", parent, position.X + menuItem.Width, position.Y);
-        }
+        //    Point position = parent.PointToScreen(menuItem.Bounds.Location);
+        //    menuItemsToolTip.Show("More remote scripts, Prep for scans, Closeout checklist, Edit PowerShell scripts, Trial notes", parent, position.X + menuItem.Width, position.Y);
+        //}
 
         private void toolsToolStripMenuItem_MouseLeave(object sender, EventArgs e)
         {
             menuItemsToolTip.Hide(toolsToolStripMenuItem.DropDown);
         }
 
-        private void helpToolStripMenuItem_MouseHover(object sender, EventArgs e)
-        {
-            menuItemsToolTip.ToolTipTitle = "Help Menu Info";
-            menuItemsToolTip.IsBalloon = true;
-            menuItemsToolTip.Show("Find general help, troubleshoot connection issues to trial clients, get PowerShell commands and more.", helpToolStripMenuItem.DropDown);
-        }
+        //private void helpToolStripMenuItem_MouseHover(object sender, EventArgs e)
+        //{
+        //    menuItemsToolTip.ToolTipTitle = "Help Menu Info";
+        //    menuItemsToolTip.IsBalloon = true;
+        //    menuItemsToolTip.Show("Find general help, troubleshoot connection issues to trial clients, get PowerShell commands and more.", helpToolStripMenuItem.DropDown);
+        //}
 
-        private void helpToolStripMenuItem_MouseLeave(object sender, EventArgs e)
-        {
-            menuItemsToolTip.Hide(helpToolStripMenuItem.DropDown);
-        }
+        //private void helpToolStripMenuItem_MouseLeave(object sender, EventArgs e)
+        //{
+        //    menuItemsToolTip.Hide(helpToolStripMenuItem.DropDown);
+        //}
 
-        private void fileToolStripMenuItem_MouseHover(object sender, EventArgs e)
-        {
-            menuItemsToolTip.ToolTipTitle = "File Menu Info";
-            menuItemsToolTip.IsBalloon = true;
-            menuItemsToolTip.Show("refresh application, open local script folder, copy PowerShell scripts to local machine.", fileToolStripMenuItem.DropDown);
-        }
+        //private void fileToolStripMenuItem_MouseHover(object sender, EventArgs e)
+        //{
+        //    menuItemsToolTip.ToolTipTitle = "File Menu Info";
+        //    menuItemsToolTip.IsBalloon = true;
+        //    menuItemsToolTip.Show("refresh application, open local script folder, copy PowerShell scripts to local machine.", fileToolStripMenuItem.DropDown);
+        //}
 
         private void fileToolStripMenuItem_MouseLeave(object sender, EventArgs e)
         {
@@ -916,6 +955,93 @@ namespace Sea_Trials_Script_Launcher
         {
             BetaDisclaimerForm betaDisclaimerForm = new BetaDisclaimerForm();
             betaDisclaimerForm.ShowDialog();
+        }
+
+        private void eTCOptionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void changeETCDatabaseTargetOnClientsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RunScriptNonAdmin("changeClientETCTargetDatabase.ps1");
+        }
+
+        private void removeScriptsFolderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // Define the target directory
+            string targetDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "VS_Scripts");
+
+            // Remove directory
+            if (Directory.Exists(targetDirectory))
+            {
+                Directory.Delete(targetDirectory, true); // 'true' to remove any subdirectories and files
+                Console.WriteLine($"{targetDirectory} has been deleted.");
+                MessageBox.Show("Script folder has been removed.");
+            }
+            else
+            {
+                Console.WriteLine($"{targetDirectory} does not exist.");
+                MessageBox.Show("location does not exist or the folder has already been removed.");
+            }
+        }
+
+        
+
+        private void dontShowLoginScreenToolStripMenuItem_CheckedChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.ShowLoginScreenSetting = dontShowLoginScreenToolStripMenuItem.Checked;
+            Properties.Settings.Default.Save();
+        }
+
+        private void appVersionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("App version: " + appVersion.ToString(), "App Information");
+        }
+
+        private void credentialsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UserCredentialForm userCredentialForm = new UserCredentialForm();
+            userCredentialForm.ShowDialog();
+        }
+
+        private void networkInformationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RemoteClientNetworkInformationForm remoteClientNetworkInformationForm = new RemoteClientNetworkInformationForm();
+            remoteClientNetworkInformationForm.ShowDialog();
+        }
+
+        private void testButton_Click(object sender, EventArgs e)
+        {
+            RunScript("testScript.ps1");
+        }
+
+        private void viewRemoteCredentialsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RemoteCredentialsForm remoteCredentialsForm = new RemoteCredentialsForm();
+            remoteCredentialsForm.ShowDialog();
+        }
+
+        private void sendMsgToClientsBtn_Click(object sender, EventArgs e)
+        {
+            RunScript("sendNetMessageToClients.ps1");
+        }
+
+        private void configMenuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Feature coming soon", "STCM Config");
+            //ConfigMenuForm configMenuForm = new ConfigMenuForm();
+            //configMenuForm.ShowDialog();
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This version " + GetTitleVersionNumber() + " is under testing and some features are currently being improved.", "Information");
         }
     }
 }

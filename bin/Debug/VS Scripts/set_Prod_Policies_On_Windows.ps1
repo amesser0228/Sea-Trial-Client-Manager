@@ -1,4 +1,39 @@
-﻿# Checks if the script is running as an administrator #
+﻿param(
+    [string]$CredentialUsernamePath,
+    [string]$CredentialPasswordPath,
+    [string]$BeginDeviceIDPath,
+    [string]$EndDeviceIDPath,
+    [string]$IPPrefixPath
+)
+
+$remoteUsername = Get-Content -Path $CredentialUsernamePath
+$remotePassword = Get-Content -Path $CredentialPasswordPath
+$beginningDeviceID = Get-Content -Path $BeginDeviceIDPath
+$endingDeviceID = Get-Content -Path $EndDeviceIDPath
+$remoteIPPrefix = Get-Content -Path $IPPrefixPath
+
+Write-Host "Remote Username:" -NoNewline
+Write-Host $remoteUsername -ForegroundColor Green
+Write-Host Remote IP range: -NoNewline
+Write-Host $remoteIPPrefix"."$beginningDeviceID "-" $endingDeviceID -ForegroundColor Green
+
+$remoteUsername = Get-Content -Path $CredentialUsernamePath
+$remotePassword = Get-Content -Path $CredentialPasswordPath
+$beginningDeviceID = Get-Content -Path $BeginDeviceIDPath
+$endingDeviceID = Get-Content -Path $EndDeviceIDPath
+$remoteIPPrefix = Get-Content -Path $IPPrefixPath
+
+# Provide credentials for hosts
+$remoteSecurePassword = ConvertTo-SecureString $remotePassword -AsPlainText -Force
+$credential = New-Object System.Management.Automation.PSCredential ($remoteUsername, $remoteSecurePassword)
+
+#RemoteIPs
+$remoteIPAddresses = @()
+for ($i = [int]$beginningDeviceID; $i -le [int]$endingDeviceID; $i++) {
+    $remoteIPAddresses += "$($remoteIPPrefix).$($i)"
+}
+
+# Checks if the script is running as an administrator #
 $isAdmin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")
 
 # If the script is not running as an administrator, re-launches the script with elevated privileges #
@@ -28,74 +63,21 @@ Write-Host "
 
 Write-Host "Sets production policies on clients `n`n" -ForegroundColor Yellow
 
-$data = @(
-    @{ Name = "Mobile"; Value = "1" },
-    @{ Name = "Marinette"; Value = "2" }
-    @{ Name = "CVN"; Value = "3" }
-)
 
-# Create a border and format the table
-$border = "┌────────────┬──────────┐"
-$borderBottom = "└────────────┴──────────┘"
-
-Write-Output $border
-Write-Output "│ Batch      │ Number   │"
-Write-Output $border.Replace("┌", "├").Replace("┐", "┤")
-
-foreach ($item in $data) {
-    Write-Output ("│ {0,-9}  │ {1,-9}│" -f $item.Name, $item.Value)
-}
-
-Write-Output $borderBottom
-
-$whichBatch = Read-Host "Select batch number"
-
-if ($whichBatch -le 3) {
-
-#MOB
-$mobClients = @()
-for ($i = 201; $i -le 223; $i++) {
-    $mobClients += "192.168.56.$i"
-}
-
-#MAR
-$marClients = @()
-for ($i = 101; $i -le 123; $i++) {
-    $marClients += "192.168.56.$i"
-}
-
-#CVN
-$cvnClients = @()
-for ($i = 101; $i -le 148; $i++) {
-    $cvnClients += "192.168.79.$i"
-}
-
-# Provide credentials for hosts
-$securePassword = ConvertTo-SecureString "L-3Communicati0ns!" -AsPlainText -Force
-$lcsCredential = New-Object System.Management.Automation.PSCredential ("LCS", $securePassword)
-$cvnCredential = New-Object System.Management.Automation.PSCredential ("CVN", $securePassword)
-
-#Get batch and credential
-if ($whichBatch -eq 1) {
-        $batch = $mobClients 
-        $credential = $lcsCredential}
-    elseif ($whichBatch -eq 2) {
-        $batch = $marClients
-        $credential = $lcsCredential}
-    elseif ($whichBatch -eq 3) {
-        $batch = $cvnClients
-        $credential = $cvnCredential}
 
     write-host "`nSetting production policies on:`n"
     $timeout = 100 # Timeout in milliseconds
 
     Write-Host "Querying hosts. This may take a while...`n" -ForegroundColor Magenta
-    $batch | ForEach-Object {
+    $remoteIPAddresses | ForEach-Object {
         $ip = $_
+        <#
         $ping = New-Object System.Net.NetworkInformation.Ping
         $reply = $ping.Send($ip, $timeout)
         if ($reply.Status -eq [System.Net.NetworkInformation.IPStatus]::Success) {
-            try {
+        #>
+            #<try {
+            #>
                 Invoke-Command -ComputerName $ip -Credential $credential -ScriptBlock { Write-Host $env:COMPUTERNAME -ForegroundColor Green }
                 Invoke-Command -ComputerName $ip -Credential $credential -ScriptBlock {
                     <#
@@ -383,7 +365,7 @@ if ($whichBatch -eq 1) {
                         }
                     }
 
-                    Write-Host "Sea Trial post-SCAP Policies and settings have been applied"
+                    Write-Host "Sea Trial post-Eval-STIG Policies and settings have been applied"
 
                     Start-Sleep -Seconds 1
 
@@ -393,22 +375,27 @@ if ($whichBatch -eq 1) {
                     #End
            
                 } 
-                }catch {
+                }<#catch {
                 Write-Host "cannot deliver command to $ip"
                 }
-                }
+                #>
+                <#}
                 else {
                 write-host "$ip is unavailable" -ForegroundColor Red
                 }
+                #>
                 }
 
-}
+
 else {
 write-warning "a valid batch number was not entered.
 
 Acceptable batch numbers:
 1 = MOB
 2 = MAR
-3 = CVN"
+3 = CVN
+4 = DDG"
 start-sleep 5
 }
+
+Read-Host

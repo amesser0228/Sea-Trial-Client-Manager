@@ -60,6 +60,8 @@ Start-Sleep -Seconds 8
 #Restart-Computer
 } 
 else {
+    end-process -Name $processName -Force
+    #ending process for the piped service
     write-warning "Filepath: $filePath is not available. BitLocker encryption cannot be started."
     start-sleep -Seconds 5
 }

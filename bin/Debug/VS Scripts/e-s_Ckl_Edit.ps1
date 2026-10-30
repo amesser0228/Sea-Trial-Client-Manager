@@ -16,7 +16,7 @@ Write-Host "
 
 Add-Type -AssemblyName System.Windows.Forms #opens folder dialog box
 $folderBrowserDialog = New-Object System.Windows.Forms.FolderBrowserDialog
-$folderBrowserDialog.Description = "add your text here"
+$folderBrowserDialog.Description = "select Eval-STIG ckl file"
 
 if ($folderBrowserDialog.ShowDialog() -eq 'OK') {
     $folderPath = $folderBrowserDialog.SelectedPath

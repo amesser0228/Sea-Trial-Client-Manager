@@ -119,6 +119,7 @@ if ($whichBatchnumber -eq 1) {
         $batch = $mobClients 
         $credential = $lcsCredential
         $printerName = "Brother HL-L2370DW series Printer"
+        $PrinterHostAddress = "192.168.56.150"
         $printerPath = "\\192.168.56.150\Brother HL-L2370DW series Printer"
         $driverName = "Microsoft IPP Class Driver"
         }
@@ -126,14 +127,17 @@ if ($whichBatchnumber -eq 1) {
         $batch = $marClients
         $credential = $lcsCredential
         $printerName = "Brother HL-L2370DW series Printer"
+        $PrinterHostAddress = "192.168.56.150"
         $printerPath = "\\192.168.56.150\Brother HL-L2370DW series Printer"
         $driverName = "Microsoft IPP Class Driver"
         }
     elseif ($whichBatchNumber -eq 3) {
         $batch = $cvnClients
         $credential = $cvnCredential
-        $printerName = "Brother HL-L2370DW series Printer"
-        $printerPath = "\\192.168.56.150\Brother HL-L2370DW series Printer"
+        $printerName = "VersaLink B400"
+        $PrinterHostAddress = "192.168.79.249"
+        #Add second CVN printer
+        $printerPath = "\\192.168.79.249\VersaLink B400"
         $driverName = "Microsoft IPP Class Driver"
         }
 
@@ -143,7 +147,7 @@ Add-Type -AssemblyName System.Drawing
 
 # Create the form
 $form = New-Object System.Windows.Forms.Form
-$form.Text = "Select Remote Computers"
+$form.Text = "Add printer to clients"
 $form.Size = New-Object System.Drawing.Size(350, 500)
 $form.StartPosition = "CenterScreen"
 
@@ -196,7 +200,7 @@ $form.Close()
 
                     if ($printers.Count -lt 1) {
             # Add printer port
-            Add-PrinterPort -Name $printerPath -PrinterHostAddress "192.168.56.150" -ErrorAction SilentlyContinue
+            Add-PrinterPort -Name $printerPath -PrinterHostAddress $PrinterHostAddress -ErrorAction SilentlyContinue
             $existingPort = Get-PrinterPort | Where-Object {$_.PortName -eq $portName}
             if ($existingPort) {
             Write-Host "Printer port '$printerPath' already exists. Continuing to add printer..." -ForegroundColor Yellow
@@ -224,6 +228,9 @@ $form.Close()
              
                     Write-Host "cannot deliver command to $ip"
                     }
+                  }
+                  else {
+                  Write-Host "$ip is unavailable" -ForegroundColor Red
                   }
                }
            }

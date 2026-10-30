@@ -121,11 +121,23 @@
   <data name="STCM_Logo_Auto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\STCM_Logo_Auto1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="saveFileICO" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\saveFileICO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="user-login-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-login-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="STCM-scriptHelp_client_unavailable_example" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\STCM-scriptHelp_client_unavailable_example.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="setRemoteCredentialAccountInfoIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\setRemoteCredentialAccountInfoIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Eval-STIG_ICO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Eval-STIG_ICO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="versionInformationIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\versionInformationIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loginScreenIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loginScreenIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="checkList-Ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\checkList-Ico.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,20 +151,35 @@
   <data name="Untitled (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="userCredentialsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\userCredentialsIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Untitled (8)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled (8).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="powershell1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\powershell1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Nessus_ICO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Nessus_ICO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AHat_Technologies" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AHat_Technologies.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="winRMAthenticationIssueKerberos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\winRMAthenticationIssueKerberos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2724534-200" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2724534-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="networkInformationIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\networkInformationIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="remoteNetworkInformationIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\remoteNetworkInformationIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="remoteComputerIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\remoteComputerIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="remove_folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\remove_folder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="remove_folder_x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\remove_folder_x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="free-exit-icon-2860-thumb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\free-exit-icon-2860-thumb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,8 +193,11 @@
   <data name="scripts_dir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\scripts_dir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="STCM-scriptHelp_client_unavailable_example" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\STCM-scriptHelp_client_unavailable_example.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="image_cb1b70b3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image_cb1b70b3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="revealPasswordIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\revealPasswordIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="about_form1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\about_form1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,26 +205,29 @@
   <data name="STCM_Logo_New" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\STCM_Logo_New.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Visual PowerShell" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Visual PowerShell.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="STCM_Logo_Current" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\STCM_Logo_Current.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="notepad-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notepad-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="winRMAuthenticationIssueTrustedHosts1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\winRMAuthenticationIssueTrustedHosts1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="AHat_Technologies" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AHat_Technologies.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="remoteCredentialAccountInfoIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\remoteCredentialAccountInfoIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="info" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="STCM_Logo_Current" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\STCM_Logo_Current.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ship_half" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ship_half.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="troubleshootIcon_Gear" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\troubleshootIcon_Gear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="troubleshooter" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\troubleshooter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Visual PowerShell" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Visual PowerShell.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="favicon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\favicon (1).ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,14 +235,20 @@
   <data name="question-25" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\question-25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="remove_folder_big_x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\remove_folder_big_x.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="powershell" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\powershell.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="saveFileICO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\saveFileICO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="troubleshootIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\troubleshootIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="powershell1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\powershell1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="troubleshooter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\troubleshooter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="script_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\script_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,10 +259,16 @@
   <data name="messer_unlimited" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\messer_unlimited.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="2724534-200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2724534-200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Untitled (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Untitled (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="notepad-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\notepad-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ship_half" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ship_half.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="configMenuIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\configMenuIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
