@@ -1,1 +1,18 @@
- #.vs/
+.vs/
+bin/
+obj/
+CredentialFiles/
+VS Scripts/enterPSSession.ps1
+VS Scripts/PMS501_BaselineImage_Configuration.ps1
+VS Scripts/addNetworkPrinter.ps1
+VS Scripts/clearEval-STIGOutputFolder.ps1
+VS Scripts/createClientSystemReport.ps1
+VS Scripts/eval-STIGScanPrep.ps1
+VS Scripts/informationFinder.ps1
+VS Scripts/nessusScanPrep.ps1
+VS Scripts/run_command_remote_host_v2.5.ps1
+VS Scripts/run_script_remote_host.ps1
+VS Scripts/run_script_remote_host_v2.0.ps1
+VS Scripts/run_script_remote_host_v2.7.ps1
+VS Scripts/setTrialPolicies.ps1
+
